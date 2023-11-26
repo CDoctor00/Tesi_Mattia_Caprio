@@ -5,190 +5,605 @@
  L'informazione è il petrolio del 21° secolo e l'analisi è il motore a combustione. Peter Sondergaard~\cite{peter_sondergaard_cyte}
 \end{citazione}
 
-Sicuramente, tra i vari processi di trasformazione digitale, il principale è stato quello di dematerializzazione dei documenti cartacei, che prende il nome di \textbf{digitalizzazione} (o \textit{digitalization}). Più precisamente quando si parla di digitalizzazione si parla del processo di trasformazione di un'immagine, di un suono, di un documento in un formato digitale, interpretabile da un computer.~\cite{wikipedia_digitalization_definition}
 
-A seguito di tale processo, le informazioni nel formato digitale (prendendo poi il nome di \textit{dato}), che in precedenza non era stato nemmeno immaginato, hanno acquisito sempre più importanza nel mondo fino a diventare uno, se non il, valore più importante.
+L'incremento dei dati, il sempre maggiore valore che stanno acquisendo e la presa di coscienza da parte delle aziende su tutti i benefici acquisibili migrando il proprio sistema in un orientamento data-driven. Questi sono solo alcune delle motivazioni che hanno portato i dati a incrementare il proprio valore e importanza all'interno del mondo. Proprio perciò con il tempo sono state diverse le tecnologie e i processi applicati a quest'ultimi per poter migliorare la loro gestione ed efficienza (e di conseguenza il valore da loro ricavabile). I più importanti tra questi sono i \textit{Big Data}, i \textit{Data Warehouse} e l'\textit{Analisi dei dati}.
 
-\section{Incremento dei dati}
-Fu compreso fin dal primo momento dell'ideazione di tale progetto di digitalizzazione, con lo scopo di riorganizzare la conoscenza in modo sempre più efficiente semplificando la selezione delle notizie in un mondo sommerso dalle informazioni, quanto questo fosse ambizioso, tuttavia, forse in parte venne sottostimato quale potesse essere la portata di tale rivoluzione. Tale idea ha portato non solo alla ridistribuzione e organizzazione delle informazioni pregresse, ma anche alla creazione di nuove informazioni dovute proprio a tale processo di modernizzazione. A queste, si sono poi aggiunte sempre più dati da dover salvare e gestire con l'incremento delle nuove tecnologie messe a disposizione dal progresso evolutivo che il mondo stava e sta tutt'ora affrontando. 
+\section{I Big Data}
 
-\subsection{Nuove dimensioni}
+Come accennato in precedenza le esigenze di salvataggio e gestione dei dati sono diventate sempre più importati, proprio per tale motivo ha guadagnato importanza a sua volta anche il mondo dei \textit{Big Data}. Ovvero il campo emergente in cui l'evoluzione del mondo e della sua tecnologia offre nuovi modi per recuperare il valore dalla marea di nuove informazioni generate. La capacità di gestire efficientemente le informazioni e di estrarre conoscenza da quest'ultime è diventato un vantaggio sempre più importante a cui ogni azienda aspira. Proprio per questo molte compagnie stanno basando il loro obiettivo, tanto da farlo diventare anche il proprio core business, sulla capacità di raccogliere e analizzare i dati, così da ricavare il maggior numero di informazioni utili possibili. L'adozione della tecnologia dei Big Data nell'ambito delle compagnie non può più definirsi una scelta opzionale, bensì una necessità obbligatoria per sopravvivere ed ottenere un vantaggio competitivo.\cite{new_horizon_for_a_data_driven_economy}
 
-Proprio a causa dell'aumento di sempre nuovi dati e quindi del peso che questi occupino all'interno di uno spazio di memoria, è stato necessario ingrandire la scala delle unità di misura, creandone sempre più grandi tali da permettere di esprimere immediatamente la dimensione del volume di dati a cui si stesse facendo riferimento. Di seguito è riportata la tabella delle dimensioni attualmente definite.~\cite{datadrivendaily_dimension_table}
+Questo poiché senza delle informazioni che possano considerarsi adeguate, definite tali poiché consentirebbero di svolgere scelte corrette dettate dalla conoscenza derivate dalla lettura di tali dati, difficilmente si potrebbe ottenere una strategia vincente. I Big Data sono ciò che permette di svolgere questo compito al meglio, trattandosi di beni da cui è possibile estrarre moltissime informazioni che poi potranno essere impiegate per prendere le decisioni nel miglior stato di conoscenza possibile.\cite{iusitinere_big_data}
 
-\begin{table}[hbt!]
+Ad avvalorare tali affermazioni è presente il report svolto dalla piattaforma Acumen svolto a fine del 2022 (basato su dati raccolti fino al 2021), secondo cui il mercato dei Big Data a livello mondiale nel 2021 si è attestato sul valore di 165,5 miliardi di dollari. Inoltre, a seguito di approfonditi studi, è stato previsto un incremento del valore fino a 473,6 miliardi nel 2030 dovuto ad un CAGR annuale\footnote{Il \textit{Compound Annual Growth Rate} (\textit{CAGR}), o \textit{Tasso di crescita annuale composto}, corrisponde alla crescita percentuale media di una grandezza in un lasso di tempo.\cite{borsa_italiana_cagr}} del 12,7\%.\cite{acumen_big_data_market}
+
+\begin{comment}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure//capitolo_2/Global-Big-Data-Market.jpg}
+    \caption{Valore del mercato globale dei Big Data}
+    \label{fig:Global-Big-Data-Market}
+\end{figure}
+\end{comment}
+
+\subsection{Definizione}
+
+Il capitolo precedente ci ha permesso di comprendere quanto sia stata rilevante l'evoluzione dei dati e di come questi abbiano inciso nella storia dell'uomo, anche al di fuori dell'ambito informatico. Facendo ciò ci è stato possibile comprendere come, anche senza un vero e proprio riferimento ad una definizione ufficiale, molti sono stati i riferimenti eterogenei al mondo dei Big Data. Per poter capire effettivamente cosa siano i Big Data bisogna quindi adoperare una definizione ufficiale, purtroppo però ad oggi non è stata ancora creata. Per questo motivo, di seguito sono riportate le più rilevanti e significative definizioni pubblicate nel tempo.
+
+\begin{comment}
+\begin{table}
+    \centering
+    \begin{tabular}{|p{10cm}|p{3cm}|}
+        \textbf{Definizione} & \textbf{Autore} \\
+        «I Big Data sono risorse informative ad alto volume, alta velocità e/o alta varietà che richiedono nuove forme di elaborazione per consentire una migliore presa di decisioni, scoprire nuove intuizioni e ottimizzare i processi.» 
+        & Laney Doug (2001)\cite{laney_3d_data_management}\\
+        «Quando le dimensioni dei dati stessi diventano parte del problema e le tecniche tradizionali per lavorare con i dati perdono efficacia.» 
+        & Mike Loukides (2010)\cite{loukides_data_science}\\
+        «Dati le cui dimensioni ci costringono a guardare oltre i metodi collaudati e consolidati in quel momento.» 
+        & Jacobs Adam (2009)\cite{jacobs_big_data}\\
+        «Le tecnologie Big Data rappresentano una nuova generazione di tecnologie e architetture progettate per estrarre valore in modo economico da volumi molto ampi di dati di varie tipologie, consentendo la cattura ad alta velocità, la scoperta e/o l'analisi.» 
+        & IDC (2011)\cite{idc_big_data}\\
+        «I Big Data sono un insieme enorme di dati complessi che richiedono metodologie, strumenti e competenze atte a gestirli, processarli, estrarli ed analizzarli.» 
+        & Elisa Iandiorio (2021)\cite{iandorio_big_data}\\
+        «Una raccolta di insiemi di dati grandi e complessi che possono essere elaborati solo con difficoltà utilizzando strumenti di gestione di database normalmente disponibili.» 
+        & Mike 2.0. (2014)\cite{mike_big_data}\\
+        «Il termine “Big Data” comprende l'uso di tecniche per catturare, elaborare, analizzare e visualizzare potenzialmente grandi insiemi di dati in un periodo di tempo ragionevole non accessibile alle tecnologie informatiche standard.» 
+        & NESSI (2012)\cite{nessi_big_data}\\
+        «I Big Data di solito includono insiemi di dati di dimensioni oltre la capacità dei comuni strumenti software di recuperare, pulire, gestire ed elaborare dati entro un tempo trascorso tollerabile.» 
+        & Wikipedia (2023)\cite{wikipedia_big_data}\\
+        «Insiemi di dati estremamente grandi che possono essere analizzati computazionalmente per rivelare modelli, tendenze e associazioni, specialmente in relazione al comportamento umano e alle interazioni.» 
+        & Google dictionary (2023)\cite{google_big_data}\\
+        «Definiamo i Big Data come un fenomeno culturale, tecnologico e accademico che si basa sull'interazione tra: (1) Tecnologia: massimizzare la potenza di calcolo e l'accuratezza algoritmica per raccogliere, analizzare, collegare e confrontare grandi insiemi di dati. (2) Analisi: trarre vantaggio da grandi insiemi di dati per identificare modelli al fine di formulare affermazioni economiche, sociali, tecniche e legali. (3) Mitologia: la diffusa convinzione che grandi insiemi di dati offrano un livello superiore di intelligenza e conoscenza che può generare intuizioni che in passato erano impossibili, con l'aura di verità, oggettività e precisione.» 
+        & danah boyd, Kate Crawford (2012)\cite{routledge_big_data}\\
+    \end{tabular}
+    \caption{Definizioni di Big Data}
+    \label{tab:big_data_definitions}
+\end{table}
+\end{comment}
+
+\begin{comment}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure//capitolo_2/Big_Data.jpg}
+    \caption{I Big Data}
+    \label{fig:Big_Data}
+\end{figure}
+\end{comment}
+
+Anche in questo caso sono state riportate le definizioni identificate come le più rilevanti, ma non tutte quelle esistenti. Ciò permette di apprendere come, per quanto non esista una definizione standard, tra tutte quelle esistenti create arbitrariamente dagli studiosi, a seguito di ampie ricerche, siano presenti delle caratteristiche comuni. Da tali tratti distintivi è possibile affermare che:
+
+\begin{center}
+\textit{Il termine Big Data fa riferimento ad un processo adoperante un insieme di dati, anche eterogenei fra loro, la cui dimensione, complessità e velocità di acquisizione ne rendono difficile la gestione, in tempi accettabili, attraverso strumenti e processi tradizionali; tuttavia, grazie ad apposite risorse (personale, hardware e software) permette di svolgere una gestione ed analisi dei dati tale da ricavare valore da questi in quantità, qualità e tempistiche prima impensabili.}
+\end{center}
+
+Quindi, è possibile semplificare il concetto dicendo che con l'espressione “Big Data” si indica la raccolta di una grande mole di dati digitali che, per acquisire valore, richiedono l'utilizzo di specifiche infrastrutture, metodologie di gestione e modelli di analisi. Come è possibile dedurre, il motivo per cui non è stato possibile creare una definizione specifica e che potesse essere assoluta è dovuto al concetto di Big Data. Poiché dipende principalmente dal fatto che si parla di una gestione ed analisi di dati che non sarebbe applicabile con tecnologie comuni, con l'evoluzione di quest'ultime dovute al passare degli anni le capacità di elaborazioni migliorerebbero e quindi non ciò che era considerato Big Data in passato potrebbe non essere considerato tale oggi o in futuro. Proprio per questo motivo la definizione di Big Data deve essere relativa e in continua evoluzione.
+
+Sicuramente sentendo le parole “Big Data” una delle prime associazioni che si hanno nella propria mente è quella di un grande volume di dati, tuttavia se si volesse conoscere la quantità precisa per comprendere quando effettivamente si parla di Big Data ciò non sarebbe possibile per due motivi:
+
+\begin{itemize}
+    \item sono definiti “grandi” non solo per il loro volume, ma anche per la varietà e la complessità che li contraddistingue;
+    \item per lo stesso motivo del “problema” che affligge la definizione del termine Big Data, non è possibile quantificare il volume minimo per parlare di Big Data poiché le dimensioni che si hanno al giorno d'oggi, come abbiamo potuto apprendere in precedenza, non sono paragonabili a quelle passate o future.
+\end{itemize}
+
+\subsection{Caratteristiche}
+
+A seguito del proprio studio sul fenomeno dei Big Data, Doug Laney elaborò un nuovo modello in grado di definire quali fossero le loro caratteristiche. Prese il nome di “\textbf{Modello delle 3V}”, poiché pone i 3 concetti di \textit{Volume, Velocità e Varietà} alla base della definizione di Big Data (sopra riportata). Col passare degli anni e con l'evoluzione del fenomeno tale modello è stato integrato con altri quattro elementi in grado di definire e interpretare ancor di più nello specifico le caratteristiche di ogni dato, ovvero \textit{Valore, Veridicità, Valenza e Visualizzazione}. È importante precisare che risulta difficile isolare le singole caratteristiche poiché esiste una forte legame tra di loro. Di seguito sono riportate le relative definizioni.\cite{agcom_big_data}
+\begin{itemize}
+    \item \textbf{Volume} (\textit{Volume}). Il volume rappresenta la caratteristica che più facilmente si può accostare ai Big Data; però come detto in precedenza numerosi sono stati gli studi che cercano di misurare tale caratteristica, tuttavia è stata riscontrata l'impossibilità di conoscerne il preciso ammontare.
+    \item \textbf{Varietà} (\textit{Variety}). La varietà fa riferimento all'eterogeneità delle fonti sorgenti dei dati, dei loro formati, da cui vengono acquisite le informazioni e della rappresentazione e analisi dei dati immagazzinati.
+    \item \textbf{Velocità} (\textit{Velocity}). La velocità è connessa alle tempistiche con cui le banche dati vengono alimentate, in particolare alla alta frequenza con cui i dati circolano da un punto di origine a uno di raccolta. Tuttavia, la velocità non riguarda esclusivamente il flusso di dati, ma anche la necessità di processare i dati in maniera rapida e per prendere decisioni ad un ritmo sempre più veloce, spesso in tempo reale.
+    \item \textbf{Valore} (\textit{Value}). Il valore corrisponde alla capacità di estrarre/ricavare dai dati il valore economico, o più precisamente le informazioni che possano diventare un valore aggiunto per svolgere decisioni, di qualsiasi genere o ambito di riferimento, che comportino un guadagno economico. 
+    \item \textbf{Veridicità} (\textit{Veracity}). La veridicità pone l'attenzione sulla rilevanza degli aspetti qualitativi legati ai dati e, di conseguenza, alla fiducia che in essi si può riporre. In altri termini, la veridicità garantisce che i dati siano accurati; ciò comporta la necessità di impedire l'accumulo nei sistemi di dati che non siano “utili”.
+    \item \textbf{Variabilità} (\textit{Variability}). Per prima cosa bisogna sottolineare che la variabilità è differente dalla varietà. I significati e le interpretazioni di questi agglomerati di dati grezzi dipendono molto dal loro contesto. Quando si tratta di analizzare le impressioni, questo è fondamentale. Gli algoritmi devono essere in grado di comprendere il contesto in cui operano e decifrare il significato preciso di ogni parola nel loro specifico ambiente. La variabilità illimitata dei Big Data presenta quindi una sfida di decodifica unica se si vuole sfruttare tutto il suo valore.
+    \item \textbf{Visualizzazione} (\textit{Visualization}). Per visualizzazione dei dati si intende ricavare informazioni sintetiche e renderle di facile comprensione da una vastità di dati, essa rappresenta indubbiamente una delle sfide più ardue da affrontare.
+\end{itemize}
+
+\begin{comment}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure//capitolo_2/Le 7 V dei Big Data.png}
+    \caption{Le 7 V dei Big Data}
+    \label{fig:Le 7 V dei Big Data}
+\end{figure}
+\end{comment}
+
+\subsection{Strutturazione dei dati}
+
+Come affermato sopra, una delle caratteristiche dei Big Data è la varietà poiché in un ambiente possibilmente eterogeneo come questo, i dati vengono ricevuti quasi sempre in formati differenti. In base al loro formato, o per meglio dire la loro \textit{struttura}, è necessario adoperare approcci distinti per ottenere le informazioni necessarie.
+
+Quando si parla di \textbf{struttura dei dati} si riferisce ai metodi di organizzazione delle unità di dati all'interno di insiemi più grandi. La creazione e il mantenimento di specifiche strutture di dati aiutano a migliorare l'accesso al valore di quest'ultimi. Man mano che i dati vengono organizzati in modo più elaborato essi diventano più funzionali.\cite{theastrologypage_data_structure}
+
+In base alle necessità, all'architettura del progetto e al loro scopo, i dati possono essere salvati in tre diversi modi:
+
+\begin{itemize}
+    \item \textbf{Dati strutturati}. I dati strutturati sono dati la cui struttura è predefinita e quindi rispettano tutti la stessa forma prima di essere inseriti all'interno dell'archivio dati. Ciò permette di avere lo stesso insieme di proprietà per i dati che rispettano il medesimo formato. Tali dati vengono anche chiamati dati relazionali poiché è possibile rappresentarli facilmente in un formato tabellare relazionabile tra loro.\cite{geeksforgeeks_big_data_structure}
+    \item \textbf{Dati semi-strutturati}. I dati semi-strutturati sono una tipologia di dati che non è conforme ad una struttura formale di modelli di dati, ma che sfrutta alcuni tipi di tag organizzativi per separare gli elementi semantici che li compongono così da definire delle gerarchie per i campi che contengono le informazioni. Solitamente queste strutture sono adoperate per il salvataggio dei metadati, che contengono delle informazioni strutturate ma sempre gli stessi campi.\cite{magnimind_big_data_structure}
+    \item \textbf{Dati non strutturati}. I dati non strutturati sono il tipo di dati che non aderiscono a nessuno schema o insieme di regole definito e quindi si presentano in forme o strutture sconosciute e diverse tra loro. Questo tipo di dati ha una forma sconosciuta e non può essere archiviato in modi tradizionali e non può essere analizzato a meno che non vengano trasformati in un formato strutturato. Proprio per questo motivo la gestione di tali dati è un compito impegnativo.\cite{altervista_big_data_structure}
+\end{itemize}
+
+Principalmente, i dati contenenti le informazioni vengono salvati in formati strutturati o non strutturati e per questo motivo spesso si incorre nel dubbio sul quale scegliere tra i due formati per il proprio progetto. Di seguito è riportata una tabella che mostra le differenze fra le due tipologie di dati.\cite{analytixlabs_big_data_structure}
+
+\begin{comment}
+\begin{table}
     \centering
     \begin{tabular}{ccc}
-        \hline
-        Unità di misura & Abbreviazione & Dimensione\\
-        \hline
-        Bit & b & 1 o 0\\
-        Byte & B & 8 b\\
-        Kilobyte & KB & 1024 Byte o 210 bit\\
-        Megabyte & MB & 1024 Kilobyte o 220 bit\\
-        Gigabyte & GB & 1024 Megabyte o 230 bit\\
-        Terabyte & TB & 1024 Gigabyte o 240 bit\\
-        Petabyte & PB & 1024 Terabyte o 250 bit\\
-        Exabyte & EB & 1024 Petabyte o 260 bit\\
-        Zettabyte & ZB & 1024 Exabyte o 270 bit\\
-        Yottabyte & YB & 1024 Zettabyte o 280 bit\\
+        Ambito di paragone & Dati Strutturati & Dati Non Strutturati\\
+        Struttura & I dati strutturati nei Big Data si basano su RDBMS e seguono una struttura a righe-colonne. Poiché hanno sempre la stessa forma, tali dati possono essere utilizzati sia da macchine che uomini. &  I dati non sono organizzati in un modo definito, per questo motivo non funzionano con alcun set di modelli di dati. \\
+        Fonti & Provengono principalmente da database relazionali, sistemi di gestione, siti web, applicazioni, dati finanziari, archivi dati, sensori e dispositivi IoT. & Provengono principalmente da file di testo, immagini, video, audio, documenti PDF, e-mail, social media, log e dati di tracciamento, documenti di elaborazione e bot di assistenza.\\
+        Formati & I loro possibili formati di origini sono: CSV, Excel, Database Relazioni vari, XML, Parquet ed Avro. & I loro possibili formati di origini sono: TXT, PDF, JPEG, PNG, MP3 e MP4.\\
+        Modelli & Modello che rispetta una struttura predefinita prima di essere salvati nell'archivio dati. & Sono memorizzati nel proprio formato originale senza essere elaborati finché non eseguiti.\\
+        Salvataggio & I dati vengono salvati in un formato tabellare e richiedono meno spazio di archiviazione. & Questi dati vengono archiviati come file multimediali o database NoSQL, richiedendo maggiore spazio di archiviazione.\\
+        Formato & Segue uno schema rigido che fornisce sia coerenza che efficienza. & Non segue una struttura costante e per questo è incoerente.\\
+        Facilità di analisi & Esistono diversi strumenti di analisi rodati per il recupero, la gestione e l'analisi dei dati. & Gli strumenti per il recupero, la gestione e l'analisi dei dati sono ancora in fase di sviluppo.\\
     \end{tabular}
-    \caption{Tabella delle unità di misura per l'espressione di dati}
-    \label{tab:data_measures}
+    \caption{Differenze tra dati strutturati e dati non strutturati}
+    \label{tab:data_structure_differences}
 \end{table}
+\end{comment}
 
-\subsection{La Digital DataSphere}
+In altre parole, analizzando le differenze riportate nella Tabella  \ref{tab:data_structure_differences}, la scelta di adoperare uno dei due formati di dati dipende da quale sia lo scopo e soprattutto la tipologia di informazioni che si vorrebbero salvare. Non esiste un formato che prevale sull'altro in qualsiasi caso, ma solamente in base alla propria esigenza.
 
-L'azienda IDC \footnote{La \textit{International Data Corporation} (\textit{IDC}) è un fornitore globale di informazioni di mercato, servizi di consulenza ed eventi per i mercati della tecnologia dell'informazione, delle telecomunicazioni e della tecnologia di consumo.} ha localizzato e definito i tre principali ambienti dove la digitalizzazione avviene di continuo e dove tali dati vengono salvati, ovvero:~\cite{idc_digital_datasphere}
+\begin{comment}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=1\linewidth]{figure//capitolo_2/structured-data-vs-unstructured-data.png}
+    \caption{Differenze tra dati strutturati e dati non strutturati}
+    \label{fig:structured-data-vs-unstructured-data}
+\end{figure}
+\end{comment}
+
+\subsection{Vantaggi e problematiche dei Big Data}
+
+I Big Data rappresentano il fattore produttivo chiave in un'economia data-driven; molti sono gli ambiti, sia provati che pubblici, in cui l'utilizzo di tecniche di analisi di big data ha permesso di creare nuovi servizi, migliorare quelli esistenti, innovare i processi produttivi e distributivi, rendere l'offerta di tutti i prodotti e servizi, migliorare quelli esistenti, innovare i processi produttivi e distributivi, rendere l'offerta di tutti i prodotti e servizi (anche non digitali) più rispondenti alle esigenze dei consumatori e cittadini. Tuttavia, benché stimolante, l'analisi dei big data è un'operazione complessa. I data scientist si occupano dell'analisi dei dati per offrire all'azienda informazioni e raccomandazioni utili e i data engineer sono responsabili di identificare, assemblare e gestire gli strumenti necessari in un flusso di dati. Ogni singola fase rappresenta delle sfide in termini di integrazione, capacità di storage e riduzione dei budget IT.\cite{redhat_big_data}
+
+Pertanto di seguito sono riportate alcune delle problematiche che bisognerebbe considerare se si ha l'intenzione di predisporre un sistema per l'applicazione dei Big Data\cite{microsoft_big_data}:
+
+\begin{itemize}
+    \item \textit{Organizzazione e accessibilità dei dati}. La principale problematica associata ai Big Data consiste nel capire come gestire il volume di informazioni ottenute affinché pervengano correttamente nelle applicazioni.
+    \item \textit{Controllo qualità}. Garantire l'accuratezza e la qualità dei dati può essere difficile e dispendioso in termini di tempo, soprattutto quando tali dati arrivano rapidamente e a volumi molto elevati. Prima di effettuare qualsiasi analisi, occorre assicurarsi che i processi di raccolta, elaborazione e pulizia dei dati siano integrati, standardizzati e ottimizzati.
+    \item \textit{Sicurezza dei dati}. Con l'aumento delle violazioni di dati, la protezione di quest'ultimi ha sempre più importanza. Così come il sistema di analisi cresce, aumenta anche la possibilità di riscontrare problemi di sicurezza sotto forma di dati fittizi, fughe di informazioni, problematiche relative alla conformità e alla vulnerabilità del software. Per ridurre alcune di tali preoccupazioni, occorre crittografare i dati e condurre regolarmente controlli di sicurezza.
+    \item \textit{Scelta degli strumenti giusti}. Dover scegliere tra i tantissimi strumenti e tecnologie disponibili può creare confusione. Ecco perché è importante provvedere alla formazione, rimanere sempre aggiornati e, se possibile, assumere o consultare uno specialista ove necessario.
+\end{itemize}
+
+Una volta mostrare le problematiche a cui fare attenzione per sviluppare un sistema di gestione dei Big Data, è ora importante mostrare quanto siano rilevanti i vantaggi nell'intraprendere questa scelta.\cite{oracle_big_data}
+
+\begin{itemize}
+    \item \textit{Sviluppo di prodotti e servizi}. L'analisi dei Big Data consente agli sviluppatori di prodotti di analizzare dati non strutturati, quali le recensioni dei clienti e le tendenze culturali, e di reagire prontamente anche predicendo le eventuali richieste anticipando la domanda della propria utenza.
+    \item \textit{Manutenzione predittiva}. I fattori che possono prevedere guasti meccanici possono essere nascosti tra i dati strutturati, riguardanti le informazioni della strumentazione, oppure nei dati non strutturati, riguardanti le informazioni generate da tali dispositivi. Analizzando queste indicazioni di potenziali problemi prima che si verifichino, le aziende possono svolgere la manutenzione in modo più efficiente in termini di costi e tempistiche.
+    \item \textit{Customer Experience}. I Big Data consentono di raccogliere dati da social media, visite sui siti web, registri delle chiamate e altre fonti allo scopo di migliorare l'esperienza di interazione tra l'utente e l'azienda. In altre parole, l'analisi di tali dati permette alle organizzazioni di migliorare l'esperienza vissuta dai clienti con il loro brand in modo da ottenere una maggiore soddisfazione da parte dell'utente, che corrisponde a possibili nuovi introiti.
+    \item \textit{Frode e conformità}. Gli scenari di sicurezza e i requisiti di conformità sono in continua evoluzione. I Big Data aiutano a identificare i modelli nei dati che indicano frodi e ad aggregare grandi volumi di informazioni per rendere i rapporti normativi molto più veloci. Gli insight generati dall'analisi dei tali dati consentono alle aziende di anticipare il rischio e a prepararsi ad eventuali malevoli imprevisti.
+    \item \textit{Efficienza operativa}. L'efficienza operativa potrebbe non essere sempre un argomento innovativo, ma ha molta rilevanza nel mondo dei Big Data. In tale ambito, è possibile analizzare e valutare la produzione, i feedback e i resi da parte dei clienti, e ulteriori fattori per ridurre le interruzioni e anticipare le future richieste. I big data possono essere utilizzati anche per migliorare il processo decisionale in linea con l'attuale domanda di mercato.
+    \item \textit{Incentivare l'innovazione}. I Big Data possono aiutare ad innovare studiando le interdipendenze tra essere umani, istituzioni, entità e processi e quindi determinando nuovi modi per utilizzare tali insight. Sfruttare gli insight così generati crea infinite possibilità, dal migliorare le decisioni su considerazioni interne a fornire nuovi prodotti e servizi.
+\end{itemize}
+
+\subsection{Thick data}
+
+Come abbiamo potuto comprendere dal precedente sotto capitolo, i Big Data non riescono a mostrare tutte le informazioni che si potrebbero recuperare da una determinata fonte. Nel caso degli small data è possibile recuperare la “parte emotiva”, corrispondente a sue volta in ulteriori informazioni adoperabile per diventare conoscenza ed essere infine sfruttate. Allo stesso modo, esiste un'altra famiglia di dati che ha la sua rilevanza nel mondo dell'analisi dei dati, ovvero i thick data.
+
+I thick data riguardano le informazioni sul significato e le connessioni che le persone attribuiscono ai servizi o alle tecnologie, così come il processo con cui li consumano. L'idea alla base è che l'analisi interpretativa dei dati deve seguire un approccio non solamente quantitativo ma anche qualitativo puntando a ulteriori fattori come quelli esterni ai dati a disposizione. Di seguito è riportata una tabella riepilogativa che permette di comprendere la differenza tra i Big Data ed i Thick Data.\cite{big_data_and_thick_data}
+
+\begin{comment}
+\begin{table}[!ht]
+    \centering
+    \caption{Differenza tra i Big Data e i Thick Data}
+    \begin{tabular}{|l|l|l|}
+    \hline|
+        \textbf{Caratteristiche} & \textbf{Big Data} & \textbf{Thick Data} \\ \hline
+        Formato & Dati in formato numerico. & Dati non numerici, qualitativi formato. \\ \hline
+        Volume & Solitamente quantità elevate. & Solitamente quantità basse. \\ \hline
+        Metodi di collezione & Documenti digitali, archivio digitalizzato record, streaming di dati, log di trasmissione, dati numerici recuperati da Internet. & Osservazioni e interviste dirette ai partecipanti, focus group, sondaggi a risposta aperta, video registrazioni, dati qualitativi provenienti da Internet \\ \hline
+        Analisi & Ricerche di scienziati sociali e computazionali. & Ricerche di antropologi e etnografi. \\ \hline
+        Requisito di immersione & Non è necessario che gli analisti siano in loco per analizzare i dati. & Di solito in loco o con l'osservazione diretta online, e immersi nel contesto. \\ \hline
+        Ruolo nella soluzione dei problemi & Generare soluzioni a problemi in gran parte noti, generando decisioni automatiche. & Identifica i problemi che contano di più per le parti interessate e testa le soluzioni prima di espanderle. \\ \hline
+        Punti di forza & \textit{Scala}: generare insight generalizzabili a un'ampia porzione o a un'intera popolazione. & \textit{Profondità}: identificare ciò che interessa in primo luogo agli stakeholder; dipingere un quadro olistico di determinate esperienze. \\ \hline
+    \end{tabular}
+    \label{BG vs TD}
+\end{table}
+\end{comment}
+
+In altre parole, i thick data permettono di comprendere le motivazioni che hanno portato le persone a svolgere determinate scelte, ciò permette anche di comprendere quali sono stati i ragionamenti e le sensazioni che hanno portato a prendere una determinata decisione da parte di un utente. Di conseguenza, quando i Big Data vengono combinati con i thick data, è possibile generare un quadro più completo delle esigenze, dei requisiti e delle preferenze dei consumatori.
+
+\begin{comment}
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Thick and Big Data.jpeg}
+    \caption{Schema dei Thick e Big Data}
+    \label{fig:Thick and Big Data}
+\end{figure}
+\end{comment}
+
+\subsection{Differenza tra i Big Data e i dati tradizionali}
+
+Di seguito è riportata una tabella che permette di descrivere le differenze tra i Big Data e i dati tradizionali.\cite{big_vs_traditional_data}
+
+\begin{comment}
+\begin{table}
+    \centering
+    \begin{tabular}{ccc}
+        Caratteristica & Big Data & Dati tradizionali\\
+        Dimensioni & Volumi approssimativamente misurati in petabyte, exabyte o zettabyte. & Volumi approssimativamente misurati in gigabyte e terabyte\\
+        Organizzazione & Dati, principalmente, grezzi o non strutturati con schemi dinamici & Dati strutturati organizzati in record, file e tabelle, solitamente sono dati relazionali\\
+        Architettura & Quasi sempre gestiti adoperando sistemi distribuiti dato il volume e la complessità & Solitamente gestiti adoperando sistemi con strutture centralizzate\\
+        Fonti & Derivano da fonti di qualsiasi genere: programmi, social media, dispositivi IoT, ecc. & Derivano in genere da determinati programmi con uno scopo specifico\\
+        Analisi & L'analisi può essere svolta sia in modo incrementale che in tempo reale & Analisi incrementale: si verifica un evento, i dati vengono generati, gestiti e poi analizzati\\
+    \end{tabular}
+    \caption{Differenza tra Big Data e dati tradizionali}
+    \label{tab:big_vs_traditional_data}
+\end{table}
+\end{comment}
+
+I Big Data e i dati tradizionali hanno scopi diversi ma correlati, che ben possono collaborare tra loro.
+
+\section{I Data Warehouse}
+
+Il \textit{data warehousing} ha iniziato il proprio percorso negli anni '70 grazie a William H. Inmon e Ralph Kimball poiché ritenevano che i database basati sui modelli, per quanto efficienti nel trattamento dei dati relazionali, non lo erano altrettanto per casi di report analitici complessi. Le aziende necessitavano di una maggiore analisi dei dati per prendere decisioni aziendali efficaci e ben ragionate. Ai tempi non esisteva una metodologia di integrazione adeguata disponibile per rappresentare i dati necessari che le compagnie immagazzinavano nei vari sistemi di supporto.\cite{researchgate_data_warehouse}
+Per sopperire a tali necessità Inmon e Kimball condussero una ricerca dettagliata sui sistemi di supporto decisionale e sui data warehouse, sviluppando un loro approccio nella creazione di tali sistemi che permettessero attività di analisi, centralizzando grandi quantità di dati derivanti da più origini e formati.
+
+\subsection{Definizione}
+
+Il padre del termine \textbf{data warehouse} è William H. Inmon che, nel finire degli anni '90, lo definisce come «una raccolta di dati orientati al soggetto, integrati, non volatili e varianti nel tempo, finalizzata a supportare le decisioni della direzione aziendale». In quest'ottica, i data warehouse assumono un doppio scopo nella gestione dei dati:\cite{inmon_building_the_data_warehouse}
+
+\begin{itemize}
+    \item Possibilità di essere interrogati per recuperare specifiche informazioni necessarie nell'immediato.
+    \item Mantenimento dei dati con l'obiettivo di sfruttarli in futuro quando avranno assunto maggior valore.
+\end{itemize}
+
+\subsubsection{Le caratteristiche}
+
+Facendo riferimento alla suddetta definizione di Inmon, è possibile affermare che essa si basi su quattro caratteristiche fondamentali che riguardano i dati di cui un data warehouse si compone, per avere una migliore comprensione del concetto di seguito sono riportate le spiegazioni di tali caratteristiche:\cite{researchgate_data_warehouse_architecture}
 
 \begin{enumerate}
-    \item \textit{Core} (o “nucleo”): consiste nei datacenter tradizionali e cloud messi a disposizione dai provider;
-    \item \textit{Edge} (o “bordo”): ovvero le infrastrutture delle imprese/aziende che non fanno parte dei datacenter principali; 
-    \item \textit{Endpoint} (o “estremo”): con il termine "endpoint" si fa riferimento a tutti i dispositivi personali che sono agli estremi della rete, come PC, smartphone, dispositivi IoT, eccetera. 
+    \item \textit{Orientati al soggetto}: tutti i dati, ritenuti importanti, relativi ad un determinato argomento vengono raccolti e archiviati come un unico insieme in un formato utile; tali dati vengono presentati in base a soggetti specifici oppure aree di interesse.
+    \item \textit{Integrati}: i dati vengono archiviati in modo globalmente accettabile, ovvero rispettando una determinata convenzione cosicché le loro strutture e attributi possano essere coerenti anche indipendentemente dal caso in cui il loro formato originale di archiviazione, dovuto a sistemi operativi eterogenei, siano differenti o addirittura incompatibili.
+    \item \textit{Non volatili}: le informazioni ricavabili dai dati archiviati non devono cambiare ogni volta che viene eseguito un processo di recupero o analisi; tali informazioni sono coerenti indipendentemente dal momento in cui vengono richieste al data warehouse.
+    \item \textit{Varianti nel tempo}: questa caratteristica, per quanto a primo impatto possa sembrare in contraddizione con la precedente, in realtà la avvalora. Quando si parla di “varianti nel tempo” si intende che le informazioni recuperate possano variare dipendentemente dal periodo in cui vengono recuperate e ciò permette di mantenere una traccia dei cambiamenti avvenuti così che possano descrivere la storia del soggetto a cui si fa riferimento. Ciò naturalmente è possibile inserendo il periodo di riferimento all'interno delle informazioni registrate nei dati salvati.
+\end{enumerate}
+
+\subsection{Obiettivi dei data warehouse}
+Per comprendere meglio cosa sono i data warehouse è utile fare una ricapitolazione di quali sono gli obiettivi per cui vengono utilizzati.\cite{kimball_the_data_warehouse_toolkit}
+
+\begin{itemize}
+    \item \textit{Rendere le informazioni facilmente accessibili}. I dati devono essere intuitivi e ovvi per l'analista e non solo per lo sviluppatore. Le strutture e le etichette dei dati dovrebbero rappresentare i processi mentali e il vocabolario dell'azienda. 
+    \item \textit{Presentare le informazioni in modo coerente}. I dati devono essere attentamente raccolti da una varietà di fonti, puliti, sottoposti a controlli di qualità e resi disponibili solo quando adatti all'uso da parte degli utenti preposti.
+    \item \textit{Il sistema deve adattarsi ai cambiamenti}. Le esigenze degli utenti, le condizioni aziendali, i dati e la tecnologia sono tutti soggetti a cambiamenti. Il sistema DW deve essere progettato per gestire cambiamenti inevitabili in modo delicato, tale da non invalidare i dati o le applicazioni esistenti. Se i dati descrittivi nel sistema devono essere modificati, è necessario tener conto in modo appropriato delle modifiche e rendere queste modifiche trasparenti agli utenti.
+    \item \textit{Presentare le informazioni tempestivamente}. Venendo adoperato in modo sempre più intensivo per le decisioni operative, i dati grezzi possono dover essere convertiti in informazioni utilizzabili entro ore, minuti o addirittura secondi.
+    \item \textit{Proteggere i “beni informativi”}. Le informazioni più preziose di un'azienda sono solitamente conservate nei data warehouse. Proprio per questo motivo tali sistemi devono controllare efficacemente l'accesso alle informazioni confidenziali della compagnia.
+    \item \textit{Il sistema deve essere affidabile per migliorare i processi decisionali}. I dati presenti all'interno del sistema devono essere sicuri e appropriati per supportare le eventuali decisioni prese dall'azienda. Il processo decisionale di una compagnia viene solitamente avvalorato dall'analisi dei dati rispetto all'ambito della scelta e proprio per questo motivo i dati in esso contenuti devono essere corretti e coerenti.
+\end{itemize}
+
+\subsection{Tipologia di dati}
+
+È possibile identificare in tre principali categorie i dati che alimentano un sistema di data warehouse:\cite{vercellis_business_intelligence}
+\begin{itemize}
+    \item \textbf{Dati interni}. Sono principalmente archiviati nei database, denominati sistemi transazionali o operativi, che corrispondono ai punti cardine di un sistema informativo aziendale. I dati interni vengono raccolti attraverso applicazioni transazionali che supervisionano regolarmente le operazioni di un'azienda. Questa collezione di applicazioni software transazionali è chiamata \textit{Enterprise Resource Planning (ERP)}. Questi dati, fondamentali per l'analisi e i reporting aziendali, provengono solitamente da diverse componenti del sistema informativo:
+        \begin{itemize}
+            \item \textit{Sistemi back-office}: raccolgono record transazionali derivanti dalle azioni/attività svolte dai software;
+            \item \textit{Sistemi front-office}: raccolgono dati derivanti dalle attività per rapportarsi con gli utenti finali;
+            \item \textit{Sistemi web-based}: raccolgono dati creati dalle interazioni dei sistemi con i clienti.
+        \end{itemize}
+    \item \textbf{Dati esterni}. Ci sono diverse fonti di dati esterni che possono essere utilizzate per arricchire il valore delle informazioni archiviate nei database interni. Ad esempio, è possibile fare riferimento ad alcune agenzie che raccolgono e mettono a disposizione dati relativi alle vendite, alla quota di mercato e alle previsioni future per specifici settori industriali, nonché economici e finanziari. 
+    \item \textbf{Dati personali}. Solitamente gli analisti e i decision maker che svolgono ricerche aziendali si affidano anche ad informazioni e valutazioni personali archiviate all'interno di fogli di lavoro o database locali situati nei propri computer. Il recupero di tali informazioni e la loro relativa integrazione con i dati strutturati provenienti sia da fonti interne che esterne è uno degli obiettivi dei \textit{sistemi di gestione delle informazioni} (\textit{Knowledge Managament Systems, KMS}).
+\end{itemize}
+
+\subsection{La modellazione dei dati}
+Esistono molte tecnologie di database e strumenti per l'elaborazione dei dati, inoltre, insiemi di dati differenti richiedono strumenti ad hoc per far sì che le analisi svolte possano reputarsi efficaci. La creazione di modelli di dati, o modellazione di dati, offre la possibilità di comprendere i dati che bisogna gestire e prendere le giuste decisioni a riguardo.\cite{aws_data_modeling}
+La modellazione dei dati è un processo adoperato per analizzare e definire tutti i diversi tipi di dati che l'azienda gestisce (raccoglie o produce) che siano di supporto a processi aziendali nel relativo ambito di competenza. Poiché sono le compagnie a determinare il modo ed il momento dell'applicazione di tali dati, il processo di modellazione di quest'ultimi è un importante esercizio utile a comprendere e chiarire quali sono i requisiti a loro associati.\cite{microsoft_data_modeling}
+
+\subsubsection{Categorie dei modelli di dati}
+
+Esistono tre categorie principali che rappresentano i livelli di pensiero durante lo sviluppo di un modello di dati, esse si dividono dipendentemente dal loro grado di astrazione, ovvero:\cite{ibm_data_modeling}
+
+\begin{itemize}
+    \item \textit{Modelli di dati concettuali}. Anche denominati modelli di dominio, offrono una visione d'insieme di ciò che il sistema andrà a contenere, come esso sarà organizzato e quali regole di business saranno adoperate. Tali modelli sono di solito creati durante il processo di raccolta dei requisiti iniziali del processo. In genere includono le classi di entità, le loro caratteristiche ed i relativi vincoli, le relazioni tra loro e i requisiti di sicurezza ed integrità dei dati associati.
+    \item \textit{Modelli di dati logici}. Sono meno astratti e forniscono maggiori dettagli sui concetti e le relazioni rispetto al dominio in esame, o in altre parole il flusso dei dati e il contenuto del database. Si esegue uno dei vari sistemi di notazione formale per la modellazione dei dati. Tali modelli indicano gli attributi dei dati e mostrano le relazioni tra le entità. I modelli di dati logici sono utili in ambienti di implementazione altamente procedurali o in caso di progetti orientati intrinsecamente ai dati.
+    \item \textit{Modelli di dati fisici}. Questi modelli forniscono uno schema di come i dati saranno fisicamente immagazzinati in un database definendo le specifiche delle modalità di realizzazione del modello logico. Tali modelli, come è facile dedurre, sono i meno astratti tra le tre tipologie. Offrono un design finalizzato che può essere implementato come un database relazionale, includendo tabelle associative che illustrano le relazioni tra le entità.
+\end{itemize}
+
+\subsubsection{Tipologie di modellazione}
+
+Più precisamente, il tipo di modellazione dei dati definisce la struttura logica di quest'ultimi, ovvero il modo in cui essi vengono archiviati logicamente, naturalmente ciò comporta anche la definizione delle modalità di archiviazione, organizzazione e recupero.  Le principali tipologie sono tre, ovvero:\cite{sap_data_modeling}
+
+\begin{itemize}
+    \item \textbf{Relazionale}. È il modello di database maggiormente in uso, esso archivia i dati in record di formato fisso e li organizza in tabelle strutturate in righe e colonne. Il fattore più importante di questa tipologia di database sono naturalmente le relazioni definite all'interno di tale struttura, il cui compito è di creare un legame tra due dati comuni (detti chiavi) che permettono di collegare due tabelle tra loro. Il tipo di modello di dati più semplice presenta due elementi in cui i dati grezzi vengono suddivisi in “misure” (i valori numeri adoperati nei calcoli matematici) e “dimensioni” (valori numerici o testuali che danno informazioni secondarie non adoperabili per dei calcoli).
+    \item \textbf{Dimensionale}. È un approccio meno rigido e strutturato che favorisce una struttura di dati contestuale rispetto all'ambito di utilizzo o all'ambiente aziendale. Gli elementi fondamentali di questa struttura di database sono definiti “fatti” (i dati primari) e sono accompagnate da informazioni di riferimento definite “dimensioni” (i dati associativi). Il recupero dei dati può essere rapido ed efficiente, ma la mancanza di collegamenti relazioni può rendere tale processo più complicato. 
+    \item \textbf{Entità-Relazione}. È un approccio che sfrutta il modello E-R (Entità-Relazione) con una struttura di dati aziendali in formato grafico contenete caselle di varie forme che rappresentano attività o funzioni (entità) e righe che rappresentano associazioni e dipendenze (relazioni). Tale modello viene adoperato per creare database relazioni in cui ogni riga rappresenta un'entità e i campi in quella riga contengono degli attributi.
+\end{itemize}
+
+\subsection{Componenti dei data warehouse}
+Per comprendere meglio come funziona un processo di data warehousing, che la piattaforma Corporate Finance Institute definisce come «il processo di raccolta e archiviazione dei dati da varie fonti e dalla loro gestione per fornire preziose intuizioni aziendali. Il data warehousing è una combinazione di tecnologia e componenti che consentono un utilizzo strategico dei dati»\cite{cfi_data_warehousing}
+, sarebbe utile analizzare quali sono i componenti che definiscono la struttura dei data warehouse:\cite{altexsoft_data_warehouse_concepts}
+
+\begin{itemize}
+    \item \textbf{Fonti di dati}. Queste rappresentano tutte le origini da cui i dati recuperati in un formato grezzo.
+    \item \textbf{Livello di ingestione}. Tale livello rappresenta il componente atto al recupero dei dati che andranno a comporre un data warehouse. Esistono due differenti approcci per eseguire tale compito, ovvero gli strumenti \textit{ETL} (\textit{Extract, Transform, Load}). Entrambe le tipologie di procedure si connettono alle fonti di dati per estrarre, trasformare e caricare i dati grezzi in un sistema di archiviazione centralizzato con metodologie differenti, ma le stesse operazioni.
+    \item \textbf{Staging Area (opzionale)}. Corrisponde ad un'area di archiviazione intermedia, utilizzata dagli strumenti di ETL per eseguire le operazioni di elaborazione prima che i dati vengano effettivamente caricati all'interno del data warehouse. In altre parole, è il punto in cui i dati vengono ripuliti, deduplicati, suddivisi, uniti e convertiti in un formato unificato per adattarsi al modello da adoperare, precedentemente definito, all'interno del DW. 
+    \item \textbf{Livello di archiviazione}. Questo è lo spazio di archiviazione dove i dati vengono caricati.
+    \item \textbf{Modulo dei metadati}. Tutti i metadati relativi ai dati recuperati, sono archiviati in questo apposito modulo e sono gestiti da un manager predisposto. In alcuni casi, potrebbe essere presente uno strato aggiuntivo costruito sopra l'intera infrastruttura per curare i metadati, come uno strato di virtualizzazione dei dati. 
+    \item \textbf{Data mart (opzionale)}. In alcuni casi, un DW può essere un insieme di sottosezioni più piccole chiamate data mart, costituite da dati riguardanti ognuno un determinato ambito.
+    \item \textbf{Livello di presentazione}. Il blocco finale, ma non per importanza, di un data warehouse riguarda gli strumenti che forniscono un accesso semplificato e diretto ai dati per gli utenti finali. Questo livello serve come interfaccia per la visualizzazione dei dati, la generazione di report aziendali e l'estrazione di informazioni separate per specifici compiti.
+\end{itemize}
+
+\begin{comment}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Data Warehouse Components.png}
+    \caption{Componenti di un Data Warehouse}
+    \label{fig:Data Warehouse Components}
+\end{figure}
+\end{comment}
+
+\subsection{Architettura dei data warehouse}
+
+I data warehouse non sono sistemi semplici. La loro complessità intrinseca, derivata dalla tipologia di problemi che sono destinati a risolvere, ovvero fornire agli analisti una visione unificata e facilmente leggibile delle informazioni, si aggiunge alla mancanza di un preciso modello che permetta di definire quali tecniche o approcci debbano essere applicati e quale sia il metodo per lo sviluppo di tali sistemi.\cite{kelly_data_warehousing_in_action}
+
+Durante gli anni sono state sviluppate diverse architetture per la creazione di un sistema di data warehousing, principalmente possono essere suddivise in tre tipologie:\cite{interviewbit_data_warehouse_architecture}
+
+\begin{itemize}
+    \item \textbf{Architetture a singolo livello}. Sono utilizzate per l'elaborazione di dati batch e in tempo reale. I dati vengono prima trasferiti ad un'architettura a singolo livello dove vengono poi convertiti in un formato adatto per l'elaborazione in tempo reale. A questo punto i dati vengono trasferiti in un sistema di analisi in tempo reale. Questa architettura è quella più usata poiché la più facile da implementare e poiché la più affine all'elaborazione dei dati operativi. In altre parole, con tale architettura si hanno uno o più database connessi direttamente alle interfacce di analisi che l'utente finale sfrutta per svolgere query di ricerca. L'unica cosa che si frappone tra le interfacce e i database è un middleware per l'elaborazione e la memorizzazione dei dati allo scopo di determinare la qualità dei dati prima che siano adoperati dalle interfacce analitiche.
+    \item \textbf{Architetture a doppio livello}. In un'architettura a due livelli il processo analitico è separato da un processo di logica di business, permettendo in questo modo un maggiore livello di controllo ed efficienza. Tale sistema fornisce una migliore comprensione dei dati e permette decisioni più informate. In questa architettura viene aggiunto il livello di data warehouse e ciò permette alla stessa di descrivere un flusso dei dati suddiviso in quattro differenti fasi:
+        \begin{enumerate}
+            \item \textit{L'origine dei dati} è critica per l'integrità del DW. L'integrità dei dati memorizzati deve essere garantita poiché essa è la rappresentazione del grado di veridicità ed accuratezza dei dati registrati ed un data warehouse deve essere composto di dati che possano essere definiti affidabili da questo punto di vista.
+            \item La \textit{fase di staging dei dati} è un punto chiave del processo ETL e può ridurre significativamente il tempo necessario per la sua esecuzione. L'operazione di ETL è estremamente fondamentale per un processo di data warehousing e per questo motivo migliorare il più possibile tale ambito.
+            \item I \textit{metadati} sono un elemento di grande rilevanza in un data warehouse poiché corrispondono alle informazioni che aiutano un amministratore del sistema a decidere le logiche da applicare sulla gestione dei dati, come l'eliminazione, la conservazione, l'aggiornamento e l'utilizzo di determinati dati. Tali informazioni, permettono di mantenere una coerenza della logica di gestione applicata all'interno del DW, che è un valore critico per una eventuale analisi o report sviluppato su tali dati.
+            \item La \textit{profilazione dei dati}\footnote{La \textit{profilazione dei dati} è il processo di esame dei dati disponibili da una fonte di informazioni esistente e la raccolta di statistiche o riepiloghi formativi su tali dati.\cite{wikipedia_data_profiling}} è l'ultimo livello poiché si occupa di convalidare l'integrità dei dati e gli standard di una possibile presentazione. Esso comprende anche analisi avanzate come la generazione di rapporti in tempo reale e batch e le visualizzazioni.
+        \end{enumerate}
+    \item \textbf{Architetture a triplo livello}. Una architettura a tre livelli aggiunge al livello di origine quello di conciliazione e di data warehouse. Il principale svantaggio del livello di conciliazione è che non sia possibile ignorare completamente i problemi dei dati prima che questi vengano effettivamente conciliati. Più precisamente, il focus principale di chi si occupa di questo compito corrisponde e verificare l'integrità, l'accuratezza e la coerenza dei dati. Ogni volta che si verifica una modifica nei dati, viene eseguito uno strato aggiuntivo di revisione ed analisi di quest'ultimi per garantire che non ne siano stati inseriti nuovi errati. Questa architettura è molto affine a sistemi con un ciclo di vita lungo.
+\end{itemize}
+
+\begin{comment}
+\begin{figure}[b]
+     \centering
+     \begin{subfigure}[b]{0.16\textwidth}
+         \centering
+         \includegraphics[width=\linewidth]{figure/capitolo_2/DW - Single Tier Architetcure.png}
+         \caption{Singolo livello}
+         \label{DW - Single Tier Architetcure}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.16\textwidth}
+         \centering
+         \includegraphics[width=\linewidth]{figure/capitolo_2/DW - Two Tier Architetcure.png}
+         \caption{Due livelli}
+         \label{DW - Two Tier Architetcure}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.16\textwidth}
+         \centering
+         \includegraphics[width=\linewidth]{figure/capitolo_2/DW - Three Tier Architetcure.png}
+         \caption{Tre livelli}
+         \label{fig:DW - Three Tier Architetcure}
+     \end{subfigure}
+        \caption{Livelli di architetture dei data warehouse}
+        \label{fig:data_warehosue_architecture_levels}
+\end{figure}
+\end{comment}
+
+\subsection{Processo ETL (Extract, Transform, Load)}
+
+In precedenza è stato fatto riferimento alla procedura fondamentale per i data warehouse di raccolta, organizzazione e gestione dei dati dalle varie sorgenti a cui si fa riferimento. Il compito di questa procedura è rendere i dati di un'azienda disponibili recuperandoli da multiple fonti, ripulire e trasformare tali dati in modo da evitare l'inflazionamento delle informazioni reperibili da eventuali analisi da parte di dati errati o non logicamente corretti. Alcuni esperti del settore hanno indicato che lo sforzo impiegato per questa procedura all'interno di un progetto di data warehousing è pari ad un valore tra il 60\% e l'80\% del totale. Questo perché questa procedura di recupero e gestione dei dati permette di avere informazioni utili/strategiche all'interno del DW. Se questo procedimento non viene fatto correttamente, i dati originari non avrebbero alcuna utilità per la fase di interrogazione ed analisi degli stessi, rendendo l'uso del sistema di data warehousing inutile.\cite{researchgate_etl_process}
+
+Tale procedura si basa su tre operazioni principali, ovvero:\cite{sciencedirect_data_warehouse_model}
+\begin{itemize}
+    \item \textbf{Estrazione} (\textit{Extract}). Tale operazione è responsabile per il recupero dei dati dai sistemi di origine. Ogni fonte di dati ha un insieme di caratteristiche differenti che devono essere gestite correttamente per permettere un'estrazione efficiente. Per questo motivo, tale fase deve integrare efficacemente sistemi che utilizzano piattaforme, database, sistemi operativi o protocolli diversi tra loro.
+    \item \textbf{Trasformazione} (\textit{Transform}). Tale operazione è responsabile di effettuare pulizia ed adattamento (mappatura, trasformazioni, ecc.) dei dati in questione per ottenere dei dati in formati precisi in modo che siano corretti, completi, coerenti e assolutamente non ambigui. Le regole applicate per svolgere ciò dipendono dalle politiche aziendali e da quale tipologia di dati (formati e ambiti trattati) bisogna gestire. Tutte le regole applicate sono descritte nel modulo dei metadati così da poterne tenere traccia.
+    \item \textbf{Caricamento} (\textit{Load}). Tale operazione è responsabile del salvataggio dei dati recuperati all'interno del sistema di data warehouse. Naturalmente, essendo molto probabile che la quantità di dati da gestire sia elevata, tale fase deve utilizzare tecniche di ottimizzazione che permettano di aumentare le prestazioni così da permettere agli utenti finali dia vere a disposizione il prima possibile i dati di cui necessitano.
+\end{itemize}
+
+\subsection{I metadati}
+
+Nel mondo dei dati, non esistono solo le informazioni essenziali riportate dai dati stessi, ma anche altre informazioni “secondarie” che permettono di descrivere, spiegare, localizzare o contestualizzare le informazioni “principali” dei dati; anche questi sono dei dati, più precisamente prendono il nome di \textit{metadati} (a volte anche definiti grossolanamente come “dati su dati”). Il termine \textbf{metadata} si riferisce alle informazioni che integrano i dati reali. Spesso, i metadati forniscono maggiori dettagli sul contesto del contenuto di un file o danno istruzioni come gestire i dati stessi.\cite{ionos_metadata}
+
+Una volta spiegati cosa sono, è facile comprendere come questi siano una componente importante nel mondo del data warehousing. Una gestione coerente dei metadati permette una riduzione degli sforzi amministrativi e un miglioramento dello sfruttamento del sistema stesso. Una gestione corretta richiede che essi vengano recuperati e memorizzati all'interno di un apposito repository consultabile sia dai vari gruppi di utenti, al fine di essere utilizzato come documentazione da consultare per completare efficientemente i propri compiti, che da prodotti software, come ulteriore risorsa di informazioni e dati da sfruttare per valorizzare i propri lavori. L'esistenza di un singolo repository per la gestione di tutti i tipi di metadati all'interno di un'azienda ne consente una gestione centralizzata, uniforme, coerente e di facile accesso a qualsiasi tipologia di consumatore.\cite{metadata_standards}
+
+\subsection{I Data Mart}
+
+Un \textbf{Data Mart} (\textit{DM}) è archivio dati progettato per contenere dati di uno specifico ambito/argomento. In altre parole, è possibile definire i data mart come delle partizioni del data warehouse complessivo. Essendo una specializzazione di un DW, un DM è meno costoso ed impegnativo in termini di tempi di gestione e ricerca rispetto al sistema totalitario. Pertanto, in generale si può dire che un data mart integra e migliora la funzionalità di un data warehouse più grande.
+
+Come sopracitato i data mart si focalizzano su determinati ambiti o funzionalità, i dati caricati al loro interno che soddisfano tali caratteristiche possono arrivare dallo stesso data warehouse di cui fanno parte, una fonte esterna o altro. In base alla fonte da cui questi dati vengono recuperati è possibile categorizzare un data mart in due modi differenti:\cite{itl_data_warehousing_and_mining}
+
+\begin{itemize}
+    \item \textit{Data mart dipendente}. Il data mart è composto recuperando i dati da un data warehouse principale già esistente. Un processo di ETL con un data mart dipendente è semplificato poiché i dati hanno già subito l'operazione di trasformazione per essere caricati nel DW da cui si stanno estraendo. Per questo motivo, il processo di ETL in questo caso è incentrato sull'identificare il sottoinsieme dei dati interessato per il relativo ambiente di richiesta. Questa tipologia è solitamente adoperata per ottenere prestazioni migliori, un controllo più efficiente, maggiore disponibilità e minori costi.
+    \item \textit{Data mart indipendente}. Il data mart è composto recuperando i dati da fonti operative, o esterne oppure entrambe. A differenza dei data mart dipendenti, questa tipologia viene creata senza l'uso di un data warehouse principale di riferimento. Tuttavia, in questo caso il processo di ETL non viene semplificato, anzi viene aggravato della necessità di recuperare dati solo di un determinato ambito, complicando la query di ricerca ed estrazione. Questa tipologia ha il vantaggio di essere utile per piccoli gruppi di attività e soddisfa la maggior parte delle esigenze degli utenti ad un costo e tempistiche minori rispetto ad un sistema di data warehouse completo.
+\end{itemize}
+
+Di seguito è riportata una tabella riepilogativa che spiega le differenze tra un data mart e un data warehouse:\cite{streamsets_data_mart_vs_data_warehouse}
+
+\begin{comment}
+\begin{table}
+    \begin{tabular}{ccc}
+        Categoria & Data Mart & Data Warehouse\\
+        Sorgente dati & Spesso poche fonti di dati, orientate al soggetto e contenenti dati specifici. & Sfruttano molte fonti di dati.\\
+        Costi e Grandezza & Entrambi bassi. & Entrambi molto alti.\\
+        Performance & Solitamente ha un'alta velocità, dovuta alla quantità limitata di dati. & Potrebbe avere problemi di prestazioni a causa delle loro grandi dimensioni.\\
+        Sicurezza & I dati sensibili possono essere omessi completamente. & È necessario adottare misure di sicurezza per proteggere i dati sensibili.\\
+        Facilità di implementazione & Può essere abbastanza veloce perché i dati sono pochi. & Potrebbe necessitare di molto tempo, anche anni, data la grande complessità.\\
+        Longevità & Solitamente rimossi dopo che lo scopo per il quale sono stati costruiti è stato completato. & Può estendersi per tutta la vita dell'organizzazione.\\
+    \end{tabular}
+    \caption{Data Mart e Data Warehouse a confronto}
+    \label{tab:data_mart_vs_data_warehouse}
+\end{table}
+\end{comment}
+
+\subsection{I Data Lake}
+
+In precedenza è stato fatto riferimento al termine \textit{data lake}, più precisamente un \textbf{Data Lake} si riferisce a un repository di archiviazione estremamente scalabile contenente una vasta quantità di dati grezzi nel loro formato nativo fino a quando non sia necessario, oltre a sistemi di elaborazione in grado di acquisire dati senza compromettere la struttura dei dati. I data lake sono tipicamente progettati per gestire grandi volumi di dati non strutturati che vengono recuperati rapidamente e da cui vengono estratte ulteriori informazioni. Proprio per questo motivo i data lake adoperano applicazioni di analisi dinamiche, che sappiano adattarsi ai diversi formati di dati archiviati.\cite{sciencedirect_data_lake}
+
+Di seguito è riportata un'immagine esplicativa del ciclo di vita dei dati, anche definito come \textbf{data lineage}\footnote{Il \textit{data lineage}, o \textit{“lignaggio/provenienza dei dati”}, descrive la provenienza dei dati, il modo in cui sono stati ricavati e come sono stati aggiornati nel tempo} all'interno di un sistema di data lake. Questo schema ad alto livello ci permette di comprendere che mentre i dati confluiscono in determinato punto di acquisizione di un Data Lake, i corrispondenti metadati vengono recuperati e gestiti insieme alla relativa tracciabilità, provenienza e aspetti di sicurezza dei dati, durante il loro ciclo di vita.\cite{data_lake_for_enterprices}
+
+\begin{comment}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Data Lake Life Cycle.png}
+    \caption{Ciclo di vita dei dati nei Data Lake}
+    \label{fig:Data Lake Life Cycle}
+\end{figure}
+\end{comment}
+
+Originariamente i data lake sono stati creati per sopperire all'incapacità dei data warehouse di gestire i volumi crescenti, la velocità e l'ampia serie di Big Data. I data lake, anche se più lenti dei DW, sono più economici poiché non necessitano delle operazioni di trasformazione. Data la mancanza di necessità di definire degli obiettivi di business da applicare sui dati, hanno tantissimi possibili casi di utilizzo. Tuttavia, i due principali casi di utilizzo comprendono l'esplorazione della data science e le attività di ripristino e backup dei dati.\cite{ibm_data_architecture}
+
+Di seguito è riportata una tabella riepilogativa che spiega le differenze tra un data lake e un data warehouse.\cite{aws_data_lake_vs_data_warehouse}
+
+\begin{comment}
+\begin{table}
+    \centering
+    \begin{tabular}{ccc}
+        Caratteristiche & Data Lake & Data Warehouse\\
+        Dati & Tutti i dati, compresi strutturati, non strutturati e semi-strutturati. & Dati relazionali da sistemi transazionali, database e applicazioni aziendali.\\
+        Schema & Creato al momento dell'analisi. & Spesso progettato prima dell'implementazione, ma può essere creato anche al momento dell'analisi.\\
+        Prezzo/Prestazioni & I risultati delle query diventano più veloci utilizzando l'archiviazione a basso costo e il disaccoppiamento dei processi di elaborazione e archiviazione. & Risultati delle query più rapidi utilizzando uno storage locale.\\
+        Qualità dei dati & Qualsiasi dato curato e non. & Dati estremamente curati che fungono da versione veritiera centrale.\\
+        Utenti & Analisti aziendali, data scientist, sviluppatori ed ingegneri di dati. & Analisti aziendali, data scientist e sviluppatori di dati.\\
+        Analisi & Machine learning, analisi esplorativa, rilevamento di dati, streaming, analisi operativa, Big Data e profilazione. & Reporting in batch, BI e visualizzazioni.\\
+    \end{tabular}
+    \caption{Data Lake e Data Warehouse a confronto}
+    \label{tab:data_lake_vs_data_warehouse}
+\end{table}
+\end{comment}
+
+\subsection{Il modello multidimensionale dei dati}
+
+Secondo diversi studi è emerso che i modelli di dati tradizionali, come il modello E-R e il modello relazionale, non forniscono un buon supporto ai sistemi appositi per la gestione di dati a fini analitici. Per sopperire a tale problematica, nel tempo sono emersi differenti modelli dai dati basati su una visione multidimensionale dei dati in questione. Questi modelli multidimensionali categorizzano i dati come \textit{fatti} (anche definiti come “misure”) o \textit{dimensioni}.\cite{ieee_multidimensional_data_modeling}
+
+Il \textbf{modello multidimensionale} deriva la sua idea dalla constatazione che gli oggetti che influenzano il processo decisionale sono \textit{fatti} che accadono nel mondo aziendale ed ogni occorrenza di un fatto corrisponde ad un evento accaduto. Inoltre, per ognuno dei fatti registrati si è interessati ai valori di insiemi di \textit{misure} o \textit{metriche} che descrivono quantitativamente gli eventi in questione. Poiché gli eventi da registrare sono moltissimi viene adoperato un modello che permette di selezionarli e raggrupparli come se fossero collocati all'interno di uno spazio n-dimensionale i cui assi, definiti come \textit{dimensioni} di analisi, determinano diverse prospettive per la loro identificazione.\cite{unibo_introduzione_al_data_warehousing}
+
+\subsubsection{Il cubo multidimensionale}
+
+I database che sfruttano il modello multidimensionale considerano i dati come cubi che generalizzano i fogli di calcolo a qualsiasi numero di dimensioni. Inoltre, i cubi supportano gerarchie nelle dimensioni e misure senza duplicare le loro definizioni. Una raccolta di cubi correlati costituisce un database multidimensionale oppure un data warehouse. Sebbene l'immagine associabile all'idea del cubo sia di sole tre dimensioni, in realtà un cubo può teoricamente avere un numero indefinito di dimensioni, per quanto l'aumentare di dimensioni comporti la necessità di sistemi appositi per poterli gestire.\cite{researchgate_multidimensional_db}
+
+Più precisamente in un cubo le dimensioni definiscono la struttura del cubo utilizzata per effettuare le sezioni che lo compongono, mentre le misure forniscono valori numerici aggregati che siano utili all'utente finale. Un cubo consente ad un'applicazione di recuperare i valori delle misure come se queste si trovassero nelle celle del cubo, dove quest'ultime vengono definite per ogni possibile valore riepilogativo. In altre parole, una cella è definita dall'intersezione degli elementi sull'asse delle dimensioni e contiene i valori aggregati delle misure che corrispondono a quella specifica intersezione.\cite{microsoft_multidimensional_models}
+
+\begin{comment}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Multidimensional Data Cube.png}
+    \caption{Rappresentazione di dati Multidimensionali sottoforma di cubo}
+    \label{fig:Multidimensional Data Cube}
+\end{figure}
+\end{comment}
+
+Per semplificare il concetto, una tabella di un database è strutturata come un foglio di calcolo e memorizza i singoli record in un formato bidimensionale, riga per colonna; ogni fatto corrisponde all'intersezione di due dimensioni, una riga e una colonna. Invece, un cubo multidimensionale estende la singola tabella con livelli ulteriori aggiungendo una dimensione per ogni livello permettendo di rappresentare in questo modo maggiori informazioni per un singolo evento.\cite{ibm_multidimensional_data}
+
+\subsection{Database OLTP e OLAP}
+
+I database relazionali sono stati uno dei punti cardine delle infrastrutture delle applicazioni aziendali per più di venti anni. Con l'avanzare della tecnologia si pose l'obiettivo di fornire alle compagnie un sistema di gestione delle informazioni che coprisse tutti gli ambiti principali che vanno dalla pianificazione dei processi aziendali fino alle analisi individuali; tuttavia, ciò non è stato possibile. Più complessi diventano i requisiti aziendali e maggiore è stato il focus sul migliorare l'elaborazione transazionale, creando appositi database che prendono il nome di sistemi \textbf{OLTP} (\textit{On-Line Transactional Processing}, \textit{elaborazione transazionale on-line}). Ciò ha comportato la necessità di spostare le applicazioni di ambito analitico e finanziario in sistemi separati ad hoc che avessero maggiore flessibilità e prestazioni, questi prendono il nome di sistemi \textbf{OLAP} (\textit{On-Line Analytical Processing}, \textit{elaborazione analitica on-line}). Entrambi i sistemi sono basati sulla teoria relazionale dei dati, ma utilizzano approcci tecnici differenti. Inoltre, l'OLTP è il prerequisito necessario per l'OLAP, ma solo con l'OLAP le aziende possono comprendere al meglio i dati generati dal proprio lavoro e trarre delle conclusioni che permettano di migliorarlo.\cite{scribd_oltp_olap}
+
+I sistemi OLTP sono strutture progettate per alti volumi di query con accesso specifico con l'obiettivo di massimizzare l'efficienza di queste operazioni, mentre i sistemi OLAP utilizzano tecnologie di archiviazione dei dati per supportare l'analisi e l'estrazione di dati storici a lungo termine per fornire agli analisti dei report da cui ricavare informazioni per prendere decisioni aziendali.\cite{ieee_oltp_olap}
+Per comprendere meglio questo discorso di seguito vengono spiegati i concetti di OLAP e OLTP, in modo da poter approfondire l'argomento.
+
+\begin{itemize}
+    \item \textit{OLTP}. Questi database in genere comprendono dati transazionali, ovvero informazioni che tengono traccia delle informazioni correlate alle attività di un'azienda. Tali transazioni devono essere atomiche\footnote{Un'operazione si definisce \textit{atomica} se questa ha sempre un esito o positivo o negativo, non può rimanere in uno stato parziale.} e coerenti. Tali sistemi sono progettati per elaborare e archiviare in modo efficiente singole transazioni, permettendo in questo modo di gestire grandi quantità di transazioni in modo indipendente.\cite{microsoft_oltp}
+    \item \textit{OLAP}. È una tecnologia che consente di organizzare i database aziendali di grandi dimensioni e supporta l'esecuzione di analisi complesse. Può essere usata per seguire query di analisi complesse senza influire negativamente sui sistemi transazionali. Poiché i database utilizzati dalle aziende, principalmente OLTP, non sono progettati per sopperire a necessità di analisi, il recupero delle informazioni da questi sistemi è un compito esoso si in termini di tempo che di prestazioni. A questo scopo sono stati ideati i database OLAP, ottimizzati appositamente per gestire intensi carichi di lavoro in lettura e ridotti in scrittura.\cite{microsoft_olap}
+\end{itemize}
+
+Di seguito è riportata una tabella riepilogativa che spiega le differenze tra un database OLAP e uno OLTP.\cite{aws_oltp_vs_olap}
+
+\begin{comment}
+\begin{table}
+    \centering
+    \begin{tabular}{ccc}
+        Criteri & OLAP & OLTP\\
+        Scopo & Aiuta ad analizzare grandi volumi di dati per supportare il processo decisionale. & Consente di gestire ed elaborare transazioni in tempo reale.\\
+        Origine dati & Utilizza dati storici e aggregati provenienti da diverse origini. & Utilizza transazioni in tempo reale provenienti da un'unica origine.\\
+        Struttura dei dati & Adopera database multidimensionali (cubi) oppure database relazionali. & Adopera solo database relazioni.\\
+        Modello dei dati & Utilizza lo schema a stella, a fiocco di neve oppure altri modelli analitici. & Utilizza modelli normalizzati o denormalizzati.\\
+        Volume dei dati & Ha requisiti di archiviazione elevati (TB o PB). & Ha requisiti di archiviazione inferiori (GB).\\
+        Tempo di risposta & Ha tempi di risposta più lunghi (s o m). & Tempi di risposta brevi (ms).\\
+    \end{tabular}
+    \caption{Differenze tra database OLTP e OLAP}
+    \label{tab:oltp_vs_olap}
+\end{table}
+\end{comment}
+
+\section{Analisi dei dati}
+
+Se il capitolo \ref{ch:Introduzione} ci ha permesso di comprendere quanto i dati siano importanti e come siano diventati tali, con l'attuale ci sono stati spiegati largamente i concetti di \textit{Big Data}, \textit{Data Warehousing} e \textit{conoscenza} permettendoci di comprendere quali sono le operazioni, le infrastrutture e i modelli necessari alla loro gestione. Tutto ciò si raggruppa in un singolo macro ambito, ovvero quello dell'\textit{analisi dei dati}.
+
+Più precisamente, l'\textbf{analisi dei dati} (o \textit{Data Analytics}) è il processo grazie al quale vengono ricavate le informazioni dai dati, precedentemente estratti, trasformati e centralizzati, per permettere di scoprire, analizzare e comprendere dei possibili schemi (o modelli) nascosti, relazioni, tendenze correlazioni e anomalie presenti al loro interno. L'obiettivo dell'analisi dei dati è quindi identificare informazioni utili, suggerire conclusioni e aiutare a prendere decisioni accurate.\cite{talend_data_analytics}
+
+\subsection{Tipologie di analisi}
+L'analisi dei dati viene utilizzata da quasi tutti i settori per aumentare la produttività e le entrate con una riduzione dei costi. Essa permette di dare un senso a grandi volumi di dati con una varietà di dati nella sua forma grezza priva di un modello di dati. Raccogliere e archiviare una quantità così elevata di dati acquisisce valore solamente se ben utilizzati e l'analisi è uno dei migliori modi per farlo.\cite{researchgate_big_data_analytics}
+Tuttavia, data l'eterogeneità dei dati che degli ambiti di applicazione è necessario applicare tecniche di analisi differenti dipendentemente dalle proprie necessità. Proprio per questo motivo è possibile suddividere i modelli analitici in quattro differenti tipologie\cite{big_data_analytics_harnessing_data_for_new_business_models}:
+
+\begin{enumerate}
+    \item \textbf{Analisi Descrittiva}. Risponde alla domanda “Cosa sta accadendo?”. Corrisponde alla fase preliminare dell'elaborazione dei dati che crea un insieme di dati storici. In altre parole, gestisce ciò che accade in tempo reale e ciò che è accaduto in passato, così da comprendere le cause dei successi e fallimenti avvenuti in passato e conoscere gli eventuali argomenti su cui dover approfondire le proprie conoscenze date le tendenze attuali.
+    \item \textbf{Analisi Diagnostica}. Risponde alla domanda “Perché è avvenuto?”. Essa esamina le informazioni passate per conoscere come, cosa e perché un evento è successo. In altre parole, il proprio scopo è quello di scoprire eventuali informazioni che permettano di identificare la causa principale di un problema e quindi i fattori che hanno causato direttamente o indirettamente un avvenimento.
+    \item \textbf{Analisi Predittiva}. Risponde alla domanda “Cosa è probabile che accada?”. Questa analisi adopera i dati passati e presenti per prevenire cosa possa accadere in futuro, fornendo le probabilità associate all'evento in questione. Proprio a questo scopo vengono utilizzati sistemi di Data Mining associati a modelli specifici di intelligenza artificiale per svolgere l'analisi e creare i possibili scenari che potrebbero generarsi.
+    \item \textbf{Analisi Prescrittiva}. Risponde alla domanda “Cosa si dovrebbe fare?”. Si dedica a riconoscere quale sia l'azione più corretta da intraprendere. Sfruttando i dati prevenienti dalle analisi precedentemente elencate, cerca di trovare la soluzione migliore tra le varie possibili. Essa va oltre la previsione dei risultati futuri, suggerendo anche i benefici dell'azione, secondo le previsioni generate, e mostrando al decisore le implicazioni di ciascuna scelta.
 \end{enumerate}
 
 \begin{comment}
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.5\linewidth]{figure/capitolo_2/Digital-Datasphere.png}
-    \caption{Digital DataSphere}
-    \label{fig:Digital-Datasphere}
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Analytics Models.jpg}
+    \caption{Tipologie di analisi dei dati}
+    \label{fig:Analytics Models}
 \end{figure}
 \end{comment}
 
-La somma di tutti questi dati forma ciò che loro definiscono come \textbf{Global DataSphere}; più precisamente la Global DataSphere quantifica ed analizza l'ammontare dei dati creati, recuperati e duplicati in un dato anno nell'intero mondo.~\cite{datadrivendaily_dimension_table}
+\subsection{I sistemi di supporto alle decisioni}
 
-Secondo uno studio del 2018 svolto sull'incremento di tale Global DataSphere~\cite{idc_global_datasphere}, la IDC ha denotato un andamento al quanto impressionante di tipo esponenziale, ovvero secondo le stime entro il 2025 l'ammontare dei dati generati nell'intero mondo sarà pari a 175 ZB rispetto ai “soli” 80 del 2022. Leggendo il grafico riportato di seguito, è possibile notare che nel triennio 2023-2025 è stata stimato l'ammontare di 430 Zettabyte di dati, mentre andando dal 2022 a ritroso l'ammontare totale è minore di 400; in altre parole, i dati dell'ultimo triennio superano il totale dei dati creati fino al 2022 dall'inizio della storia della digitalizzazione. Per poter comprendere meglio e farsi un'ida di quanto questo valore sia elevato, riporto qui un esempio: se volessimo scaricare l'intero DataSphere del 2025, ovvero 175 ZB di dati, con una connessione di 100 Mb/s \footnote{Il valore preso in esempio è stato ricavato facendo riferimento alla media italiana di velocità di download, verificata nel 2022 ~\cite{github_speed_connection}, e poi approssimato per semplicità di calcolo} sarebbero necessari 554.552.923 anni (o più “semplicemente” 5.545.529 secoli) per completare l'operazione.
+La rapida crescita di dati e quindi il relativo compito di doverli gestire e sfruttare al meglio ha portato ad avere una sempre maggiore necessità di supporto per la comprensione ed analisi degli stessi. Sono stati molti gli studi a riguardo che hanno riscontrato che le soluzioni prodotte dai decision maker sono al di sotto del loro possibile potenziale poiché essi non sono in grado di assimilare l'elevato numero di informazioni per poter svolgere il proprio compito. Per sopperire a tale problema, sono stati ideati dei \textit{sistemi di supporto alle decisioni}, o \textit{Decision Support Systems} (\textit{DSS}), ovvero strumenti che assistono direttamente i responsabili delle decisioni esecutive nel proprio lavoro semplificando le informazioni da dover sfruttare.\cite{dss_introduction}
 
-\begin{comment}
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=1\linewidth]{figure/capitolo_2/Annual Size Global Datasphere.png}
-    \caption{Dimensione annuale della Digital Datasphere globale}
-    \label{fig:Annual Size Global Datasphere}
-\end{figure}
-\end{comment}
-
-\subsection{Salvataggio e gestione dei dati}
-
-Naturalmente, come è possibile dedurre autonomamente, questo incremento della generazione dei dati è dovuto a multipli fattori, su tutti sicuramente l'aumento di dispositivi a disposizione per la generazione di tali dati e l'espansione nel mondo dell'Internet e del Web con tutti i relativi servizi annessi. Attualmente siamo in un'era dove l'immensa quantità di dispositivi a nostra disposizione danno la possibilità alle persone di eseguire un'enorme quantità di azioni e interazioni, che non fanno altro che generare ulteriori dati e informazioni. L'incremento di tali dati ha generato in questo modo anche la necessità di salvarli e gestirli. Lo storage dei dati è la raccolta e la conservazione di informazioni digitali, tale processo svolge un ruolo sempre più centrale nella gestione dei dati e dei Big Data.~\cite{redhat_data_storage}
-
-Più precisamente quando si parla di gestione dei dati si riferisce al processo di acquisizione, archiviazione e utilizzo dei dati che consente di sapere quali dati sono disponibili, dove si trovano, chi ne è il proprietario, chi può vederli e chi vi può accedere. La gestione dei dati consente alle organizzazioni di eseguire il deployment delle applicazioni e dei sistemi critici in modo sicuro e conveniente e di facilitare le decisioni strategiche.~\cite{redhat_data_management}
-
-\section{Data-Driven Orientation}
-
-Un aspetto molto importante ma che purtroppo viene molto sottovalutato all'interno delle aziende è la conoscenza reale del dato ancora prima della sua fruizione. Questo poiché non è possibile estrapolare informazioni da dati che si hanno a disposizione se non si ha una idea chiara su cosa essi possano effettivamente indicare e valorizzare. Proprio per sopperire a tale problematica, ormai l'approccio \textit{data-driven}, o \textit{data oriented}, è diventato sempre più comune nella maggior parte delle aziende.
-
-\subsection{Il processo decisionale basato sui dati}
-
-La strategia di effettuare delle decisioni basate sui dati è stata introdotta per puntualizzare la necessità di questo nuovo orientamento che considera la raccolta dei dati come un punto cardine delle strategie aziendali. L'adozione di un insieme integrato di tecnologie apposite per l'analisi dei dati può contribuire a facilitare la comunicazione in tempo reale, coinvolgere gli attori nella presa di decisioni e consentire la costante ridefinizione delle interazioni tra gli utenti e la tecnologia così da migliorare il benessere ed ottenere, con l'avanzare del tempo, innovazione e resilienza.~\cite{emerald_data_driven_orientation}
-
-Più precisamente, il \textit{processo decisionale basato sui dati} (\textit{data-driven decision making, DDDM}) si definisce come l'utilizzo di elementi concreti, metriche e dati per orientare il processo decisionale aziendale in linea con obiettivi, scopi e iniziative. Cambiare il modo in cui la tua azienda prende decisioni non è semplice, ma incorporare dati e analisi nei cicli decisionali è il modo più efficace per generare il massimo dell'evoluzione dell'organizzazione. Proprio per questo motivo, per un'organizzazione è necessario rendere il processo decisionale data-driven una prassi.~\cite{tableau_data_driven_decision_making}
-
-\subsection{Punti chiave delle aziende data-driven}
-Le aziende data-driven basano la loro organizzazione su cinque punti chiave:~\cite{researchgate_data_driven_orientation}
-
-\begin{enumerate}
-    \item \textit{Digital transformation}. Per poter integrare i dati all'interno dei processi decisionali è necessario che questi siano naturalmente presenti e disponibili. Per permettere ciò è necessaria una chiara strategia di trasformazione digitale.
-    \item \textit{Data science}. Con l'avvento dell'adozione di strumenti tecnologici, il modo in cui le organizzazioni producono, condividono e sfruttano i dati è cambiato. Per tale motivo la Data Science (è lo studio dei dati per estrarre informazioni significative per il business ) ha trovato nuovi modi per analizzare e ottenere valore dai dati.
-    \item \textit{Data-Driven business model}. Al fine di generare ulteriore valore economico, le intuizioni aziendali acquisite devono essere sfruttate all'interno dei modelli di business. Una parte cruciale di questo processo è proprio la creazione di valore dalle informazioni digitalizzate, definendo come un DDBM si basi principalmente sul vedere i dati come una risorsa economicamente importante su cui investire.
-    \item \textit{Data-Driven innovation}. Le aziende utilizzano i dati, da loro generati e raccolti, per trasformare le loro attività commerciali in innovazioni basate su questi. Attraverso tale innovazione, le organizzazioni sono abilitate ad utilizzare, e gestire coerentemente, le loro enormi quantità di dati (Big Data).
-    \item \textit{Data Analytics}. Il valore dei dati ricercato deriva da un'attenta, corretta e congruente analisi dei dati a disposizione. Tale analisi permette alle compagnie di incrementare al meglio le proprie conoscenze aziendali.
-\end{enumerate}
-
-\begin{comment}
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=1\linewidth]{figure/capitolo_2/Data-Driven company key points.png}
-    \caption{Punti chiave delle aziende Data-Driven oriented}
-    \label{fig:Data-Driven company key points}
-\end{figure}
-\end{comment}
-
-\subsection{Le dimensioni dell'orientamento Data Driven}
-Come espresso in precedenza, l'approccio orientato ai dati da parte delle aziende per poter svolgere processi decisionali si basa su diversi punti chiave, tuttavia, non bisogna dare per scontato anche grazie a quali elementi questi vengono svolti. In altre parole, per poter applicare un processo di evoluzione orientato ai dati, un'azienda necessita della stretta collaborazione di tre aree (o fattori) differenti, ovvero:\cite{emerald_data_driven_dimensions}
-\begin{itemize}
-    \item \textit{Tecnologica}: Corrisponde all'infrastruttura tecnologica necessaria per raccogliere, elaborare e analizzare i dati (includendo hardware, software e sistemi di gestione dei dati).
-    \item \textit{Umana}: Corrisponde alle persone coinvolte nel processo di orientazione basato sui dati (includendo le competenze, le abilità e la formazione necessarie per comprendere e utilizzare i dati in modo efficace).
-    \item \textit{Manageriale}: Corrisponde alla leadership e la gestione dell'orientamento basato sui dati (includendo strategie, politiche, procedure e processi decisionali che guidano l'uso dei dati all'interno di un'azienda).
-\end{itemize}
-
-\begin{comment}
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Data Driven Orientation Dimensions.png}
-    \caption{Dimensioni della Data Driven Orientation}
-    \label{fig:Data Driven Orientation Dimensions}
-\end{figure}
-\end{comment}
-
-\section{Data Governance}
-In un mondo come quello odierno in cui i dati sono uno degli asset di maggior valore, poterli gestire in modo efficace ed efficiente diventa fondamentale in qualsiasi ambito e a qualsiasi livello. Proprio per tale motivo l'Unione Europea ha presentato il documento \textit{Data Governance Act}\footnote{Il \textit{Data Governance Act} è una legge che mira a rendere disponibili più dati, regolando il riutilizzo di dati pubblici/protetti, incrementandone la condivisione dei dati attraverso una regolamentazione di nuovi intermediari di dati e incoraggiandone la condivisione a scopi altruistici.}.\cite{europe_data_governance_act}
-
-La \textbf{governance dei dati} (\textit{Data Governance, DG}) promuove la disponibilità, la qualità e la sicurezza di questi all'interno di un'azienda attraverso diverse policy e standard. Questi processi determinano i proprietari, le misure di sicurezza e gli usi previsti per i dati. Nel complesso, l'obiettivo della DG è mantenere dati di alta qualità che siano sicuri e facilmente accessibili per ottenere informazioni aziendali più approfondite.\cite{ibm_data_governance}
-Più precisamente, secondo la definizione di Gartner «La governance dei dati è la specificazione dei diritti decisionali e un quadro di responsabilità per garantire il comportamento appropriato nella valutazione, creazione, consumo e controllo dei dati e delle analisi».\cite{gartner_data_governance_definition}
-
-\subsection{Domini della Data Governance}
-Come espresso sopra, definire una governance dei dati all'interno di un'azienda permette di indicare chi detiene i diritti decisionali e le responsabilità riguardo gli asset dell'azienda in questione. Pertanto, è importante identificare quali sono i \textit{domini decisionali} di applicazione in modo da assegnare correttamente le responsabilità e i doveri alle persone: principi dei dati, qualità dei dati, metadati, accesso ai dati e ciclo di vita dei dati. I principi dei dati, che sanciscono i confini per l'uso degli asset dei dati che riguardano gli standard aziendali (andando in questo modo a stabilire la direzione per tutti gli altri domini decisionali); la qualità dei dati, che rifinisce la base per come i dati debbano essere interpretati (metadati) e siano accessibili agli utenti (accesso ai dati): infine, la decisione sul ciclo di vita dei dati definisce la loro produzione, conservazione e ritiro, svolgendo un ruolo fondamentale nell'operazionalizzare i principi dei dati nell'ambito delle infrastrutture IT.\cite{data_governance_activities}
-
-\begin{comment}
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=1\linewidth]{figure/capitolo_2/Data Governance Dominions.png}
-    \caption{Domini della Data Governance}
-    \label{fig:Data Governance Dominions}
-\end{figure}
-\end{comment}
-
-\subsection{Data Governance Framework}
-
-Un \textit{framework}\footnote{Il termine \textit{framework} è utilizzato per esprimere il concetto di una modalità di struttura, pianificata e permanente, che supporta una prassi, una metodologia, un progetto o un sistema di gestione.\cite{wikipedia_framework_definition}} per la data governance è una raccolta di regole, processi e deleghe di ruolo che garantiscono la privacy e la conformità della gestione dei dati aziendali di una compagnia. D'altronde ogni azienda è guidata da specifici \textit{driver aziendali}, ovvero fattori o processi chiave che sono fondamentali per il successo continuato dell'azienda. Un framework di DG ben pianificato copre ruoli e responsabilità in ambito strategico, tattico e operativo, garantendo che i dati siano affidabili, ben documentati, facili da trovare, conformi, riservati e sicuri.\cite{talend_data_governance_framework}
-
-Per una gestione dei dati su più livelli, è possibile suddividere le attività svolte dalla DG in tre diversi gruppi:\cite{sadas_data_governance_strategy}
+La maggior parte delle ricerche sui DSS adotta uno dei seguenti concetti:\cite{mit_keen_dss}
 
 \begin{itemize}
-    \item \textit{Data Preparation}. Tale attività consiste nell'elaborazione dei dati grezzi provenienti da diverse fonti eterogenee e in una successiva trasformazione degli stessi in possibili dati fruibili dai sistemi aziendali.
-    \item \textit{Data Visualization}. Tale attività consiste nell'esplorazione visuale/interattiva e rappresentazione grafica dei dati recuperati, a prescindere dal loro volume e origine.
-    \item \textit{Data Cataloguing}. Tale attività consiste nella raccolta dei metadati fisici e di business combinata con strumenti di gestione e ricerca dei dati, fondamentale per svolgere un censimento dei dati a disposizione con le loro relative caratteristiche (annesse connessioni tra dati e concetti di business).
+    \item Un DSS è definito in base alla struttura del compito che deve affrontare.
+    \item I DSS richiedono una strategia di progettazione che sia distintiva dipendentemente dalle tecniche di evoluzione e "middle-out".
+    \item I DSS supportano i processi cognitivi dei singoli responsabili delle decisioni; la ricerca decisionale fornisce approfondimenti descrittivi sulla risoluzione dei problemi di gestione e teorie normative per definire come migliorarne l'efficacia.
+    \item I DSS riflettono una strategia di implementazione per rendere i computer utili ai dirigenti; questa strategia si basa sull'uso di intermediari esperti, servizi reattivi e interfacce software user-friendly.
 \end{itemize}
 
-\subsection{Vantaggi della governance dei dati}
+Più precisamente, un Decision Support System è un sistema informativo che aiuta un'azienda nel compito di svolgere attività decisionali che richiedono giudizio, determinazione e una determinata sequenza di azioni. Il DSS asiste la gestione di medio e alto livello dell'azienda che lo adotta analizzando enormi volumi di dati e accumulando informazioni che possono rendersi utili per la risoluzione di problemi o la presa di decisioni.\cite{cfi_dss}
 
-Di seguito sono riportati i vantaggi che una corretta governance dei dati può comportare all'interno di un'azienda:\cite{google_data_governance}
-\begin{itemize}
-    \item Prendere decisioni migliori in minor tempo. I dipendenti di un'azienda acquisiscono i dati di cui necessitano per raggiungere e assistere i clienti, progettare e migliorare prodotti e servizi, sfruttando eventuali occasioni.
-    \item Migliorare la gestione dei costi. I dati aiutano a gestire le risorse più efficacemente. Grazie ad una corretta gestione sarà inoltre possibile eliminare possibili duplicazioni dei dati, risparmiando spazio e soldi.
-    \item Migliorare le conformità normative. Il costante cambiamento del mondo delle leggi e conformità da seguire rende ancora più importante per le organizzazioni una gestione solida e sicura in tale ambito, diminuendone i rischi.
-    \item Guadagnare maggiore fiducia da parte dei clienti. La creazione di un sistema preciso, corretto, conforme e ben gestito permette alle aziende di avere un impatto più positivo e rassicurante agli occhi delle persone con cui deve interagire.
-    \item Gestire i rischi in modo più semplice. Adoperando una governance corretta è possibile aumentare la sicurezza sull'esposizione dei dati sensibili a sistemi o individui che non dispongono di un'adeguata autorizzazione, sulla violazione della sicurezza da parte di malintenzionati.
-    \item Consentire a più persone l'accesso ad una maggiore quantità di dati. Una governance ben strutturata permette ad un numero maggiore di utenti di accedere ai dati per loro necessari in minor tempo, avendo inoltre la certezza della correttezza degli stessi.
-\end{itemize}
-
-\subsection{Data Management}
-
-Parlando di governance dei dati, non è possibile non fare riferimento alla macro categoria dell'ambito della gestione dei dati, altrimenti detta nominata come \textbf{Data Management} (\textit{DM}), ovvero la pratica che consente di raccogliere, conservare e utilizzare i dati in modo sicuro, efficiente ed economico. L'obiettivo di tale processo è di aiutare a ottimizzare l'uso dei dati rispetto alle loro relative policy e regolamenti da dover seguire, consentendo in questo modo di prendere decisioni e svolgere azioni che aumentino i vantaggi per un'azienda.\cite{oracle_data_management}
-
-La \textit{DAMA} (\textit{Data Management Association})\footnote{La \textit{Data Management Association} è un'organizzazione internazionale il cui scopo è promuovere concetti e pratiche sulla gestione delle informazioni e dei dati.} definisce le aree di conoscenza, ovvero una categoria di specializzazione che può essere composta da uno o più argomenti, in cui agisce la gestione dei dati. Tali aree sono undici, ovvero:\cite{academiaedu_dama_framework}
-\begin{itemize}
-    \item \textit{Governance dei dati}: pianificazione, supervisione e controllo sulla gestione dei dati e sull'uso di risorse correlate ai dati;
-    \item \textit{Architettura dei dati}: a struttura complessiva dei dati e delle risorse correlate ai dati come parte integrante dell'architettura aziendale;
-    \item \textit{Modellazione e Progettazione dei dati}: analisi, progettazione, costruzione, test e manutenzione;
-    \item \textit{Memorizzazione e Operazioni sui dati}: dispiegamento e gestione di asset fisici di dati strutturati;
-    \item \textit{Sicurezza dei dati}: garantire la privacy, la riservatezza e l'accesso appropriato;
-    \item \textit{Integrazione e Interoperabilità dei dati}: acquisizione, estrazione, trasformazione, spostamento, distribuzione, replicazione, federazione, virtualizzazione e supporto operativo;
-    \item \textit{Documenti e Contenuti}: archiviazione, protezione, indicizzazione e possibilità di accesso ai dati presenti in fonti non strutturate e rendere tali dati disponibili per l'integrazione e l'interoperabilità con dati strutturati;
-    \item \textit{Dati di Riferimento e Dati Principali}: gestire dati condivisi per ridurre la ridondanza e garantirne una migliore qualità attraverso la definizione standardizzata e l'uso di valori dei dati;
-    \item \textit{Data Warehousing e Business Intelligence}: gestire l'elaborazione dei dati analitici e consentire l'accesso ai dati di supporto decisionale per la generazione di report e l'analisi;
-    \item \textit{Metadati}: raccolta, categorizzazione, gestione, integrazione, controllo, gestione e distribuzione di metadati;
-    \item \textit{Qualità dei dati}: definizione, monitoraggio e mantenimento dell'integrità dei dati, oltre che al progressivo miglioramento qualitativo dei dati stessi.
-\end{itemize}
-
-%TODO: modificare
 \begin{comment}
-\begin{figure}[!h]
+\begin{figure}
     \centering
-    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Data Management.png}
-    \caption{Elementi che compongono il Data Management}
-    \label{fig:Data Management}
+    \includegraphics[width=0.75\linewidth]{figure//capitolo_2/Decision Support System Structure.png}
+    \caption{Struttura di un sistema decisionale di supporto}
+    \label{fig:Decision Support System Structure}
 \end{figure}
 \end{comment}
+
+\subsubsection{Le caratteristiche}
+
+Identificare le caratteristiche di un sistema decisionale di supporto non è un compito semplice data l'eterogeneità di quest'ultimi e degli ambiti in cui sono adoperati, tuttavia Turban e Aronson sono riusciti a ricapitolare quali siano le caratteristiche generali che li contraddistinguono:\cite{dss_characteristics}
+
+\begin{itemize}
+    \item Un DSS assiste i decision maker con la risoluzione di problemi semi e non strutturati facendo uso del giudizio umano e dei computer.
+    \item Un DSS copre un ampio spettro di livello di gestione, dal mondo dirigenziale a quello operativo.
+    \item Un DSS fornisce supporto indifferente ad individui singoli o gruppi.
+    \item Un DSS facilita la presa di decisioni indipendenti e/o sequenziali che possono essere prese una o più volte.
+    \item Un DSS gestisce tutte le fasi del processo decisionale, ovvero: raccolta di informazioni, progettazione, scelta ed implementazione.
+    \item Un DSS copre un'ampia varietà di strumenti di analisi delle decisioni.
+    \item Un DSS è adattabile e flessibile, permettendo agli utendi di aggiungere, modificare, eliminare o riorganizzare gli elementi base di cui si compone.
+    \item Un DSS dovrebbe essere user-friendly.
+    \item Un DSS ha l'obiettivo di migliorare l'efficacia della presa di decisioni (appropriatezza e qualità) anziché l'efficienza (il costo della presa di decisioni).
+    \item Un DSS deve assistere e non sostituire un decision maker.
+    \item Un DSS adotta diversi modelli di analisi per creare strategie diverse dipendentemente dalla situazione in cui si riscontra il problema.
+    \item Un DSS dovrebbe essere in grado di fornire accesso a una varietà di fonti e formati differenti di dati.
+    \item Un DSS può essere integrato con altri sistemi e può essere distribuito tramite tecnologie di rete e web per essere facilmente fruibile.
+\end{itemize}
+
+\subsubsection{Tipologie di DSS}
+
+I sistemi di supporto alle decisioni possono essere suddivisi in differenti categorie dipendentemente dal principio su cui si basano, ovvero:\cite{techtarget_dss_types}
+
+\begin{itemize}
+    \item \textit{Basati sui dati}. Questa tipologia basa il proprio supporto sui dati provenienti da database (interni o esterni) sfruttando principi di data mining per poterli analizzare e mostrare all'utente.
+    \item \textit{Basati sui modelli}. Questa tipologia basa il proprio supporto sull'analizzare una situazione che corrisponda ad un modello/schema precedentemente definito in base ai requisiti dell'utente.
+    \item \textit{Basati sulla comunicazione e DSS di gruppo}. Questa tipologia basa il proprio supporto sull'adottare diversi strumenti di comunicazione (di ogni genere) per consentire a più di una persona di lavorare su una specifica attività, con l'obiettivo di migliorare il valore delle scelte dovute ad una collaborazione tra più persone.
+    \item \textit{Basati sulla conoscenza}. Questa tipologia basa il proprio supporto sull'utilizzo di una conoscenza aggiornata continuamente e gestita da un sistema di Knowledge Mangament in modo da fornire informazioni sempre aggiornate e coerenti basate sulla conoscenza generale dell'azienda.
+    \item \textit{Basati sui documenti}. Questa tipologia basa il proprio supporto sull'analisi dei documenti (interni o esterni) per rispondere a ricerche specifiche degli utenti e fornirgli le informazioni necessarie. 
+\end{itemize}
+
+
+\subsection{BI e BA}
+Come detto in precedenza, l'analisi dei dati è un termine ampio utilizzato per comprendere diverse metodologie di analisi dei dati. Tra queste metodologie due delle più rilevanti in ambito aziendale sono sicuramente la \textit{Business Intelligence} (\textit{BI}) e la \textit{Business Analytics} (\textit{BA}) (che inoltre, possono essere identificati anche come dei DSS).
+
+In termini generici, la BI e la BA si riferiscono all'infrastruttura collettiva, agli strumenti, alle applicazioni e ad altre risorse che generano dati e informazioni, che a loro volta valorizzano il modo in cui le aziende prendono decisioni, scoprono opportunità di guadagno e esaminano le proprie prestazioni.\cite{hpe_bi_and_a}
+
+Di seguito sono riportate delle spiegazioni generali per comprenderle meglio.\cite{academiaedu_bi_and_ba}
+
+\begin{itemize}
+    \item \textit{Business Intelligence}. La BI può essere descritta come un insieme di tecniche e strumenti che permettono l'acquisizione e la trasformazione di dati grezzi in informazioni importanti ed utili per fini aziendali. Tali tecniche sono in grado di gestire enormi quantità di dati (strutturati e in alcuni casi anche non) per permettere l'identificazione, lo sviluppo e la creazione di nuove opportunità strategiche utili alla compagnia.
+    \item \textit{Business Analytics}. La BA può essere descritta come l'insieme di competenze, tecnologie e pratiche atte all'esplorazione continua e iterativa delle prestazioni passate di una compagnia al fine di ricavare possibili intuizioni ed aiutare quindi la pianificazione delle decisioni aziendali. Tali tecniche si concentrano sullo sviluppo di nuove intuizioni e sulla comprensione delle prestazioni aziendali passate basandosi su dati e metodi statistici, in modo da migliorare le future.
+\end{itemize}
