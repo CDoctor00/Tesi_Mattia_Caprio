@@ -9,7 +9,7 @@ Questo capitolo espone la fase di progettazione e implementazione del progetto. 
 
 \section{Definizione degli obiettivi e dei requisiti}
 
-A seguito della presentazione svolta per mostrare tutte le possibilità del mondo dell'analisi dei dati è stato quindi compreso fin dal primo momento quale fosse il punto focalizzante dove l'azienda avrebbe dovuto puntare per migliorare nel proprio business, ovvero l'ambito del supporto tecnico fornito agli utenti. Quindi, per completare tale obiettivo è stato definito un progetto che avesse come obiettivo il permettere al reparto di assistenza aziendale di migliorare dal punto di vista della gestione delle chiamate ricevute, così da poter soddisfare un maggior numero di utenza.
+A seguito della presentazione svolta per mostrare tutte le possibilità del mondo dell'analisi dei dati è stato quindi compreso fin dal primo momento quale fosse il punto focalizzante dove l'azienda avrebbe dovuto puntare per migliorare nel proprio business, ovvero l'ambito del supporto tecnico fornito agli utenti. Quindi, per completare tale obiettivo è stato definito un progetto che avesse come fine il permettere al reparto di assistenza aziendale di migliorare dal punto di vista della gestione delle chiamate ricevute, così da poter soddisfare un maggior numero di utenza.
 
 \subsection{Obiettivo del progetto}
 
@@ -21,7 +21,7 @@ In altri termini, l'obiettivo del progetto era quella di creare un sistema che p
 
 \subsection{Analisi dei requisiti}
 
-Nel definire un obiettivo, il progetto ha delineato l'idea cardine su cui fondare il tutto, tuttavia essa non è abbastanza, per iniziare un progetto è necessario definire in modo preciso cosa si vuole realizzare, perché, come e con quali risorse a disposizione. Tale processo prende il nome di \textbf{analisi dei requisiti} e consiste nell'identificare e documentare le caratteristiche e funzionalità di cui lo stato finale del progetto deve essere caratterizzato.
+Nel definire lo scopo ultimo, il progetto ha delineato l'idea cardine su cui fondare il tutto, tuttavia essa non è abbastanza, per iniziare un progetto è necessario definire in modo preciso cosa si vuole realizzare, perché, come e con quali risorse a disposizione. Tale processo prende il nome di \textbf{analisi dei requisiti} e consiste nell'identificare e documentare le caratteristiche e funzionalità di cui lo stato finale del progetto deve essere caratterizzato.
 
 L'analisi dei requisiti di un sistema è una metodologia strutturata per identificare un insieme appropriato di risorse che possa soddisfare le esigenze del sistema in questione e la definizione di requisiti per la progettazione o la selezione di tali risorse. I requisiti per un sistema o un elemento di un sistema sono catturati in una specifica. L’analisi dei requisiti è il processo attraverso il quale è possibile ricavare una visione approfondita del contenuto corretto della specifica così definita.\cite{system_requirements_analysis}
 La fase della specifica dei requisiti, essendo le fondamenta sui il progetto si basa, è la più importante, dato che un errore può compromettere l'intero progetto. Per questo motivo la qualità di tale fase influisce in buona parte sulla qualità dell'intero prodotto finale. Perciò, scrivere una corretta \textit{specifica dei requisiti software} (o \textit{Software Requirements Specification, SRS}), ha un'importanza critica.\cite{researchgate_srs_introduction}
@@ -192,11 +192,6 @@ Date queste analisi è stata scelta la seconda ipotesi, ovvero lo schema normali
     \item Per permettere una migliore interoperabilità con ulteriori futuri data mart da integrare nel data warehouse, oppure ulteriori utilizzi differenti da quello attualmente ipotizzato, mantenere i dati il meno ridondanti possibili e maggiormente uniformati è un importante compito ed obiettivo.
 \end{enumerate}
 
-% Definizione dello schema adottato
-% Definizioni dei vincoli/relazioni
-% Definizioni sulle performance (indici/suddivisione in ulteriori tabelle)
-% Documentazione (?)
-
 \subsection{Selezione delle tecnologie}
 
 Come seconda fase è necessario scegliere quali tecnologie vogliono essere adottate per implementare il sistema. Sono diverse le tecnologie coinvolte nelle fasi di estrazione, trasformazione e caricamento (ETL), nella gestione del database di data warehouse e nelle attività di business intelligence. Più precisamente:
@@ -340,7 +335,7 @@ Con l'implementazione del sistema di business intelligence sono stati apportati 
     \item è stata applicata una politica di integrazione ed aumento di nuovi dipendenti che potessero svolgere il ruolo di operatori per i gruppi aventi maggiore necessità dato l'elevata richiesta di supporto rispetto il software di riferimento;
     \item è stata applicata una politica di migrazione di operatori dai gruppi che non richiedevano un elevato numero di supporto verso altri gruppi, in modo da poter bilanciare l'offerta di servizio rispetto la richiesta dei nostri clienti;
     \item è stato possibile comprendere e migliorare l'assistenza svolta da determinati operatori o per specifici servizi grazie alla rilevazione di valutazioni inferiori rispetto gli standard aziendali, così da migliorare il servizio e ricevere feedback più che positivi a seguito di tale operazione;
-    \item è stato possibile svolgere una ridistribuizione delle operazioni più complesse da svolgere così da permettere ai nuovi operatori di compiere incarichi di minore difficoltà rispetto agli operatori maggiormente esperti.
+    \item è stato possibile svolgere una ridistribuizione delle operazioni che necessitassero di maggiore esperienza per essere eseguite tra gli utenti novizi e quelli con una maggiore maturità professionale.
 \end{itemize}
 
 In altre parole, il sistema di BI ha permesso di identificare e analizzare le tendenze e i modelli nei dati, portando ad una maggiore comprensione delle problematiche dei clienti e ha permesso al team di migliorare la qualità del servizio offerto a quest'ultimi.
