@@ -1,4 +1,4 @@
-\chapter{Progetto}
+\chapter{Sviluppo ``BI-CallReport'' per Azienda Acca Software}
 \label{ch:Project}
 
 A seguito del completamento dello studio svolto, precedentemente riportato, è stato svolto in incontro con i responsabili dei reparti interessati dell'azienda in modo da poter presentare e discutere riguardo gli argomenti trattati. Durante l'incontro sono stati illustrati i punti salienti dello studio, mettendo in chiaro i pro e i contro di ogni aspetto analizzato. Tale presentazione ha permesso ai decision maker aziendali di comprendere, in linee generali, quali sono tutte le funzionalità, i sistemi, e le possibilità che strumenti di \textit{Big Data}, \textit{Data Warehousing} e \textit{Data Analytics} possono portare all'interno di una compagnia. 
@@ -7,11 +7,11 @@ Una volta apprese le informazioni, è stato quindi svolto una riunione allo scop
 
 Questo capitolo espone la fase di progettazione e implementazione del progetto. Lo scopo è di fornire una panoramica generale del processo che ha portato alla definizione del progetto in questione, evidenziandone le motivazioni, le sfide e le opportunità che lo hanno caratterizzato ed ispirato.
 
-\section{Definizione degli obiettivi e dei requisiti}
+\section{Definizione degli Obiettivi e dei Requisiti}
 
 A seguito della presentazione svolta per mostrare tutte le possibilità del mondo dell'analisi dei dati è stato quindi compreso fin dal primo momento quale fosse il punto focalizzante dove l'azienda avrebbe dovuto puntare per migliorare nel proprio business, ovvero l'ambito del supporto tecnico fornito agli utenti. Quindi, per completare tale obiettivo è stato definito un progetto che avesse come fine il permettere al reparto di assistenza aziendale di migliorare dal punto di vista della gestione delle chiamate ricevute, così da poter soddisfare un maggior numero di utenza.
 
-\subsection{Obiettivo del progetto}
+\subsection{Obiettivo del Progetto}
 
 L'azienda fin dalla propria fondazione ha sempre messo al primo posto il rapporto con le persone, evitando che questo si limitasse alla mera interazione venditore-acquirente. La compagnia punta ad instaurare un rapporto di fiducia con i propri consumatori e per poter riuscire in tale compito la vendita di prodotti ad hoc pensati sulle loro esigenze non basta, è necessario permettere loro di risolvere ogni eventuale problema avendo a disposizione un professionista del settore che sia capace di instradarlo verso la risoluzione di ogni possibile riscontro. Seguendo questa politica, l'azienda ha sempre fornito una produzione di software sulle necessità degli utenti associato ad un apposito servizio clienti che fosse capace di soddisfare ogni evenienza.
 
@@ -19,7 +19,7 @@ Proprio per questa motivazione, è stato scelto come obiettivo la definizione di
 
 In altri termini, l'obiettivo del progetto era quella di creare un sistema che permettesse il salvataggio centralizzato e strutturato di dati in modo che questi potessero essere analizzati dipendentemente dalle necessità (dinamiche) sorte in passato o che potrebbero sorgere in futuro.
 
-\subsection{Analisi dei requisiti}
+\subsection{Analisi dei Requisiti}
 
 Nel definire lo scopo ultimo, il progetto ha delineato l'idea cardine su cui fondare il tutto, tuttavia essa non è abbastanza, per iniziare un progetto è necessario definire in modo preciso cosa si vuole realizzare, perché, come e con quali risorse a disposizione. Tale processo prende il nome di \textbf{analisi dei requisiti} e consiste nell'identificare e documentare le caratteristiche e funzionalità di cui lo stato finale del progetto deve essere caratterizzato.
 
@@ -50,7 +50,7 @@ Inoltre, possono essere distinti in base alla tipologia di vincolo che impongono
     \item \textit{\textbf{Requisiti non funzionali}}. Tali requisiti, anche conosciuti con il termine di \textit{vincoli}, servono per vincolare la soluzione a rispettare determinate caratteristiche/qualità. Possono essere classificati a loro volta dipendentemente se facciano riferimento alla sicurezza, all'affidabilità, all'interoperabilità, alle prestazioni, alla compatibilità, e molte altri.
 \end{itemize}
 
-\subsubsection{Requisiti funzionali}
+\subsubsection{Requisiti Funzionali}
 
 Di seguito sono riportati i requisiti funzionali definiti durante l'incontro:
 
@@ -66,7 +66,7 @@ Di seguito sono riportati i requisiti funzionali definiti durante l'incontro:
     \item \textbf{Supporto di dashboard interattive}. Il sistema deve permettere la creazione di dashboard per monitorare in tempo reale le metriche chiave e facilitare la visualizzazione delle informazioni critiche.
 \end{itemize}
 
-\subsubsection{Requisiti non funzionali}
+\subsubsection{Requisiti Non Funzionali}
 Di seguito sono riportati i requisiti non funzionali definiti durante l'incontro:
 
 \begin{itemize}
@@ -84,11 +84,11 @@ Di seguito sono riportati i requisiti non funzionali definiti durante l'incontro
 
 Questi requisiti hanno portato all'identificazione di un sistema composto da due elementi principali, ovvero: un Data Warehouse, che si occupa di svolgere il compito della gestione dei dati, e un software di Business Intelligence, che si occupa della visualizzazione, interrogazione e la generazione di dashboard e report dai dati in questione.
 
-\section{Studio sulla raccolta dei dati}
+\section{Studio sulla Raccolta dei Dati}
 
 La raccolta dei dati rappresenta la fase cardine su cui fondare la riuscita di un sistema di DW e BI. Per poter sapere come strutturare l'intero progetto è stato quindi necessario svolgere un procedimento di studio rispetto alle sorgenti di dati fruibili. L'attuale capitolo fornisce un'analisi approfondita delle metodologie e delle considerazioni coinvolte nello studio sulla raccolta dei dati per il progetto in questione.
 
-\subsection{Obiettivi dello studio}
+\subsection{Obiettivi dello Studio}
 
 Lo scopo principale dello studio sulla raccolta dei dati è naturalmente quello di definire in modo chiaro quali sono i dati rilevanti su cui svolgere il processo di ETL. In altre parole, definire il modo corretto per estrarre, trasformare e infine caricare i dati all'interno del data warehouse. Più precisamente, sono stati identificati i seguenti obiettivi su cui lo studio doveva focalizzarsi:
 
@@ -99,7 +99,7 @@ Lo scopo principale dello studio sulla raccolta dei dati è naturalmente quello 
     \item \textit{Determinare la frequenza di aggiornamento}. Definire la frequenza con cui i dati devono essere estratti e caricati all'interno del DW per garantire che le informazioni siano sempre aggiornate.
 \end{enumerate}
 
-\subsection{Metodologia di raccolta dei dati}
+\subsection{Metodologia di Raccolta dei Dati}
 Una volta definiti gli obiettivi è stato quindi il momento di definire le metodologie che potessero portarli a termine.
 \begin{enumerate}
     \item \textit{Analisi delle fonti di dati}. In questo caso si precisano quali sono le metodologie necessarie per comprendere al meglio le fonti dei dati su cui operare. Più precisamente:
@@ -124,7 +124,7 @@ Una volta definiti gli obiettivi è stato quindi il momento di definire le metod
 
 Come è stato riportato nella fase di studio, una comprensione approfondita delle fonti dei dati, la progettazione accurata dei processi di ETL e la valutazione precisa della qualità dei dati così gestiti sono punti fondamentali per garantire l'affidabilità e la pertinenza delle informazioni generate dagli stessi da parte del sistema. Per tale motivo, lo studio dei dati così proposto fornisce le basi per la messa in atto delle fasi successive di progettazione e relativa implementazione del sistema di data warehouse e delle soluzioni di business intelligence.
 
-\section{Progettazione di un sistema di Data Warehouse}
+\section{Progettazione di un Sistema di Data Warehouse}
 
 La creazione di un sistema di data warehousing è un processo complesso che coinvolge diverse fasi chiave, dalla pianificazione iniziale alla progettazione, implementazione e manutenzione continua. Per questo motivo è utile suddividere tale compito definendo le fasi che lo compongono. Nel nostro caso, tenendo conto la definizione degli obiettivi del progetto già precedentemente svolta, le fasi adottate sono state le seguenti:
 \begin{enumerate}
@@ -134,7 +134,7 @@ La creazione di un sistema di data warehousing è un processo complesso che coin
     \item Implementazione e caricamento dei dati.
 \end{enumerate}
 
-\subsection{Scelta dell'architettura del sistema}
+\subsection{Scelta dell'Architettura del Sistema}
 
 Grazie alle conoscenze acquisite con il precedente studio, è stato scelto di adottare un'architettura a due livelli in modo da avere una struttura solida, scalabile e performante ma allo stesso tempo non enormemente complessa se rapportata all'obiettivo del progetto.
 
@@ -148,7 +148,7 @@ Per avere una maggiore comprensione del tutto, si intende precisare che un siste
 
 Un'architettura a uno, due o tre livelli identifica il numero di sottolivelli che caratterizzano il secondo livello, ovvero quello del DW. Nel nostro caso, adottando un'architettura a due livelli, esso viene suddiviso in un \textit{livello di alimentazione} e un \textit{livello di data warehouse}. Il primo sottolivello si occuperà di svolgere le operazioni di processamento dei dati, mentre il secondo si occuperà di salvare tutti i dati supportato da un contenitore di metadati. Nel nostro sistema è stato scelto di non adottare dei data mart poiché il progetto è momentaneamente ristretto ad un solo ambito di utilizzo e applicazione e quindi la scelta di aggiungerli avrebbe aumentato la complessità del progetto senza apportare alcun miglioramento o beneficio. Invece, il contenitore di metadati avrà un ruolo cruciale, come nella maggior parte dei sistemi, poiché avrà il compito di mantenere le informazioni sulle sorgenti, sui meccanismi di accesso, sulle procedure di pulitura, trasformazione e alimentazione, eventualmente sugli utenti, ecc.
 
-\subsection{Progettazione del modello dei dati}
+\subsection{Progettazione del Modello dei Dati}
 
 Tale fase è cruciale per la riuscita di un sistema di data warehousing poiché coinvolge la definizione di come i dati saranno strutturati all'interno del sistema e quindi come essi dovranno essere sfruttati per sopperire alle esigenze di analisi e reporting dei dati da parte degli utenti finali.
 
@@ -190,7 +190,7 @@ Date queste analisi è stata scelta la seconda ipotesi, ovvero lo schema normali
     \item Per permettere una migliore interoperabilità con ulteriori futuri data mart da integrare nel data warehouse, oppure ulteriori utilizzi differenti da quello attualmente ipotizzato, mantenere i dati il meno ridondanti possibili e maggiormente uniformati è un importante compito ed obiettivo.
 \end{enumerate}
 
-\subsection{Selezione delle tecnologie}
+\subsection{Selezione delle Tecnologie}
 
 Come seconda fase è necessario scegliere quali tecnologie vogliono essere adottate per implementare il sistema. Sono diverse le tecnologie coinvolte nelle fasi di estrazione, trasformazione e caricamento (ETL), nella gestione del database di data warehouse e nelle attività di business intelligence. Più precisamente:
 
@@ -212,7 +212,7 @@ Tali scelte sono dovute avendo preso in considerazione le seguenti motivazioni:
 
 \section{Processo di ETL}
 
-\subsection{Analisi del processo di ETL}
+\subsection{Analisi del Processo di ETL}
 
 Una volta preso atto delle risorse aziendali è quindi necessario delineare il processo di ETL per la gestione dei dati. Per quanto spesso sia dato per scontato questo compito non va sottovalutato, anche esso è un punto cruciale per la riuscita di un sistema di data warehousing. Come accennato in precedenza, questa fase si occupa di estrarre i dati dalle fonti originali, trasformarli in un formato adatto per l'analisi, e caricarli nel data warehouse. Di seguito si approfondiscono tutti i passaggi del processo di ETL:
 
@@ -235,13 +235,13 @@ Una volta preso atto delle risorse aziendali è quindi necessario delineare il p
     \end{itemize}
 \end{enumerate}
 
-\subsection{Definizione delle caratteristiche del processo di ETL}
+\subsection{Definizione delle Caratteristiche del Processo di ETL}
 
 Date le caratteristiche sopracitate e le risorse messe a disposizione dall'azienda è stato necessario creare un sistema personalizzato che svolgesse il processo di ETL. Tale motivazione ha portato ad adottare un linguaggio di programmazione come Golang per scrivere il codice che si occupasse di tale compito. La scelta è ricaduta sul linguaggio ideato da Google poiché è efficiente, stabile e allo stesso tempo non complesso da adottare. Quindi in un'ottica di scalabilità del progetto, oppure di ampliamento del team ad ulteriori persone, con la giusta documentazione, tale compito non comporterebbe un effort elevato. Inoltre, tale programma, una volta completo, è stato caricato all'interno di un'immagine docker per poi essere hostato da un server aziendale in un container apposito, tale che le funzionalità predisposte siano sempre a disposizione degli utenti finali.
 
 Il programma così creato si occupa di svolgere l'intero processo di ETL in modo iterativo ogni minuto, in modo da avere sempre dati aggiornati all'interno del data warehouse. Tale scelta, ha però comportato la necessità di dover gestire la possibilità di incontrare stati dei record incompleti o incongruenti, dato che l'aggiornamento delle risorse originali non viene svolto in modo sincronizzato. Per poter gestire tale problematica, il sistema oltre a caricare i dati in modo incrementale, in modo da non dover sempre gestire un alto carico di dati e da non sforzare le risorse nell'estrarre i dati, si occupa di caricare ogni volta le informazioni basilari recuperabili dalle fonti, per poi aggiornarle in un'iterazione successiva al recupero dei dati ulteriori da dover inserire per completare l'intero record finale. In questo modo, viene perso ogni possibilità di incongruenza o perdita dei dati che necessitasse che tutte le risorse avessero i dati al loro interno in contemporanea. Quindi, il sistema si occupa, ad ogni iterazione, di recuperare le informazioni da multiple fonti differenti (sia file di log che database) per poi svolgere operazioni di pulizia e formattazione, in modo da svolgere operazioni di caricamento incrementale e batch. La possibilità di far coincidere la metodologia e l'approccio di caricamento sopracitati è dovuta proprio al fatto che le iterazioni vengono svolte a poca distanza l'una dall'altra e per questo motivo i dati da gestire sono pochi ed un caricamento batchato comporta la necessità di dover svolgere un numero minore di operazioni senza che queste siano troppo pesanti.
 
-\subsection{Motivazioni delle decisioni implementative}
+\subsection{Motivazioni delle Decisioni Implementative}
 
 Nel decidere quali approcci o caratteristiche adottare nel nostro sistema, sono state prese in considerazione le seguenti motivazioni:
 \begin{itemize}
@@ -252,7 +252,7 @@ Nel decidere quali approcci o caratteristiche adottare nel nostro sistema, sono 
     \item \textit{Gestione delle modifiche}. Il sistema mette a disposizione, degli operatori del settore, di modificare nel tempo le scelte delle attività da dover svolgere, in modo da permettere una personalizzazione approfondita e perfetta per le necessità mostrate degli utenti finali.
 \end{itemize}
 
-\section{Creazione di dashboard e report finali}
+\section{Creazione di Dashboard e Report Finali}
 
 \subsubsection{Scelta del DSS}
 
@@ -265,7 +265,7 @@ Come accennato in precedenza, tale scelta è dovuta alla grande importanza del s
     \item Una seconda fase che permetterà l'accesso all'interfaccia di reportistica tramite l'ausilio della piattaforma web hostando il tutto in un server interno grazie all'adozione del servizio "\textit{Server di report di Power BI}". Ciò permetterà di espandere l'accesso ad ulteriori utenti e tenerlo allo stesso tempo controllato, in modo da mantenere un servizio stabile e scalabile.
 \end{enumerate}
 
-\subsection{Caratteristiche delle dashboard e report da creare}
+\subsection{Caratteristiche delle Dashboard e Report da Creare}
 
 La fase finale del progetto comprende l'unica parte di cui un utente finale ha visione e maggiore interesse. Proprio per tale motivo, riuscire a definire delle dashboard o report è un aspetto molto importante, poiché da questo dipenderà la facilità di comprensione e interattività con i decision maker. Per poter completare al meglio tale compito, è stata varata l'analisi dei seguenti punti:
 
@@ -279,7 +279,7 @@ La fase finale del progetto comprende l'unica parte di cui un utente finale ha v
 
 Naturalmente, nel progettare le dashboard messe a disposizione, è stato sempre messo in conto la caratteristica principale della possibilità di permettere un'interattività diretta e responsiva tra l'utente e il DSS contente i dati in questione.
 
-\subsection{Definizione delle dashboard e dei report}
+\subsection{Definizione delle Dashboard e dei Report}
 Nel suddetto percorso verso l'implementazione della fase finale di un sistema di Business Intelligence, la compagnia ha affrontato l'importante decisione di definire la strategia di presentazione dei dati. Tale strategia ha così permesso di delineare quali fossero gli obiettivi e le modalità con cui si volessero raggiungere. La scelta è stata di adottare un piano incentrato principalmente sull'adozione di report e con alcune dashboard che potessero supportare gli stessi.
 
 La scelta di dare priorità all'implementazione di pagine di report è stata guidata da diverse considerazioni chiave. La natura complessa e articolata delle informazioni da poter ricavare dalle attività svolte dal reparto di supporto tecnico e le enunciate necessità di analisi approfondite hanno richiesto una presentazione dettagliata e tecnica di tutti i dati. Essendo i report, pagine di raccolta dati che fanno delle tabelle il loro punto cardine, hanno mostrato una maggiore affinità con le necessità aziendali. I report permettono agli utenti finali di svolgere un monitoraggio, preciso, conciso e dettagliato allo stesso tempo di tutti i dati gestiti dal sistema di data warehousing. Le analisi svolgibili sui report permettono una maggiore facilità nel comprendere i dati in visione, l'identificazione chiara e veloce delle aree di interesse e soprattutto la valutazione delle metriche chiave di cui si vuole tenere traccia. Tuttavia, per cercare di rendere il tutto maggiormente intuitivo, rapido e maggiormente semplice, l'azienda ha comunque deciso di comprendere nel sistema di BI delle pagine di dashboard che potessero rappresentare e riassumere velocemente tutte le informazioni riportate minuziosamente nei report. Per tale motivo, alcune dashboard sono state sviluppate per fornire una visione sintetica e immediata delle suddette metriche chiave. In questo modo, l'adozione di entrambe le tipologie di presentazione dei dati ha permesso agli utenti finali di avere uno strumento onnicomprensivo che gli permettesse di soddisfare sia bisogni maggiormente specifici sia semplicemente sintetici.
@@ -318,14 +318,14 @@ Di seguito è riportata la lista di report e dashboard creata e suddivisa in cat
 Naturalmente, ognuna delle pagine precedentemente indicate ha funzionalità di interattività con l'utente finale, il quale ha la possibilità di utilizzare filtri (precedentemente accordati) ad hoc per ognuna delle relative pagine in modo da poter aumentare o diminuire la granularità delle informazioni che intende visualizzare e analizzare.
 Inoltre, per supportare gli utenti finali nel proprio compito, è stata definita una documentazione a cui fare riferimento dove sono indicate le finalità di ognuna delle pagine precedentemente descritte e dove è presente un glossario indicante tutte le definizioni dei termini, tecnici e non, utilizzati all'interno dell'intero sistema. Ciò permetterebbe anche ad una persona, non necessariamente addentrata all'argomento, di comprendere con maggiore facilità le finalità e le logiche adottate per le metriche mostrate.
 
-\section{Risultati del progetto}
+\section{Risultati del Progetto}
 
 Di seguito si riportano i risultati ottenuti dall'adozione del progetto precedentemente definito.
 
-\subsection{Risultati del data warehousing}
+\subsection{Risultati del Data Warehousing}
 Con l'implementazione del sistema di data warehousing è stato possibile centralizzare ed organizzare i dati provenienti da diverse fonti, anche di non semplice accesso, in un unico repository. Ciò ha permesso agli utenti IT oppure ai managed del reparto in questione di avere un accesso diretto e maggiormente efficiente ai dati necessari per le loro operazioni di routine. Inoltre, il sistema, come precedentemente precisato, non si è occupato unicamente di raggruppare i dati ma ha svolto anche il compito di pulizia e formattazione, rimuovendo in questo modo ogni possibile refuso o incorenza tra i dati aventi originariamente formati differenti. Questo ha permesso di ridurre gli errori e le inconsistenze dei dati stessi e fornendo una visione più accurate e completa delle operazioni del reparto.
 
-\subsection{Risultati della business intelligence}
+\subsection{Risultati della Business Intelligence}
 
 Con l'implementazione del sistema di business intelligence sono stati apportati una serie di miglioramenti significativi nel modo in cui i decision maker del reparto di assistenza tecnica utilizzano e analizzano i dati a loro disposizione. Grazie alla creazione di appositi report e dashboard personalizzati, è stato possibile fornire una visione chiara e concisa di tutte le metriche essenziali e cruciali sull'andamento delle loro operazioni quotidiane. Per fare alcuni esempi, grazie alle rilevazioni svolte:
 
@@ -338,26 +338,11 @@ Con l'implementazione del sistema di business intelligence sono stati apportati 
 
 In altre parole, il sistema di BI ha permesso di identificare e analizzare le tendenze e i modelli nei dati, portando ad una maggiore comprensione delle problematiche dei clienti e ha permesso al team di migliorare la qualità del servizio offerto a quest'ultimi.
 
-\subsection{Risultati finali}
+\subsection{Risultati Finali}
 
 In conclusione, l'implementazione del sistema di data warehousing e BI ha portato a una serie di miglioramenti significativi nel reparto di assistenza tecnica dell'azienda. Questi miglioramenti hanno portato a una maggiore efficienza operativa, a una migliore qualità dei dati e a una maggiore capacità di prendere decisioni basate sui dati.
 
-\section{Conclusioni}
-
-Il progetto presentato si è concentrato sul creare un sistema di data warehousing per la raccolta, gestione ed infine analisi dei dati generati dal reparto interno adibito al supporto tecnico dei clienti. L'obiettivo dello stesso ha riguardato il miglioramento delle logiche applicate al processo aziendale relative all'assistenza fornita dal reparto in questione. Per completare tale obiettivo, il progetto è stato quindi suddiviso in due fasi differenti: uno studio preliminare e una progettazione del sistema.
-
-\subsection{Studio preliminare}
-
-Nella prima fase del progetto, è stato condotto uno studio approfondito sui Big Data, il data warehousing, sull'analisi dei dati e la business intelligence. Per tale motivo sono stati approfonditi i vari metodi e tecniche utilizzate in tali ambiti, con annessa analisi sulle architetture dei sistemi in questione.
-
-Attraverso tale studio è stato possibile acquisire una comprensione vasta e solida dei principi fondamentali degli argomenti trattati. Ciò ha permesso di identificare nel data warehousing e nella business intelligence le tecniche di gestione ed analisi dati più consone allo scopo del progetto stesso. Sono state così definite le strategie che avrebbero potuto migliorare le logiche aziendali comportando maggiore efficienza e qualità nel processo aziendale. 
-
-\subsection{Progettazione del sistema}
-
-Nella seconda fase del progetto, sono state applicate le conoscenze acquisite durante lo studio preliminare per progettare un sistema di data warehousing che potesse occuparsi della raccolta e gestione di tutti i dati generati dal reparto di assistenza tecnica. Questo sistema è stato progettato allo scopo di centralizzare e organizzare tutti i dati sui cui sviluppare un sistema di business intelligence. Ciò ha permesso di comprendere le criticità dell'attuale processo di gestione del reparto e poter così analizzare eventuali soluzioni che potessero migliorare efficienza ed efficacia.
-
-Il sistema così progettato, sfruttando un apposito processo di ETL, ha permesso di svolgere avanzate e specifiche tecniche di analisi dei dati grazie ad un'interfaccia di business intelligence per fornire insight importanti per lo sviluppo del reparto di assistenza. Inoltre, per come è stato definito, il sistema può essere adottato dall'azienda anche con lo scopo di aiutare a comprendere in modo più tempestivo eventuali problemi e risolverli di conseguenza, migliorando così la soddisfazione della propria clientela.
-
+\begin{comment}
 \subsection{Conclusioni finali}
 
 In conclusione, grazie ad un sistema progettato ad hoc sulle esigenze precedentemente definite, l'analisi ha coinvolto la raccolta, la pulizia e la trasformazione dei dati esistenti, consentendo di identificare le tendenze, modelli e criticità nel funzionamento del reparto di assistenza tecnica. L'utilizzo di strumenti di business intelligence che mettessero a disposizione statistiche e visualizzazioni delle informazioni così ricavate, ha facilitato la comprensione delle dinamiche sottostanti e ha fornito una base solida per la gestione del relativo processo aziendale. La combinazione di queste tecnologie fornisce una base solida per la presa di decisioni informate, consentendo all'azienda di rimanere competitiva e orientata al futuro.
@@ -367,3 +352,4 @@ In altre parole, questo progetto ha dimostrato l'importanza che un sistema di ge
 Tuttavia, è importante sottolineare che la progettazione e l'implementazione di un sistema così definito è un processo complesso che richiede una pianificazione accurata e una relativa efficace gestione. Se tale requisiti non venissero soddisfati, il risultato del progetto stesso potrebbe riportare risultati negativi da ogni punto di vista, comportando a questo punto il rischio di compromettere il processo decisionale che si vorrebbe migliorare. Inoltre, il successo di un tale sistema, come spesso accennato durante lo studio, dipende in gran parte dalla qualità dei dati recuperati e messi poi a disposizione e dalle capacità dell'azienda di sfruttare efficacemente le informazioni derivate dall'analisi degli stessi.
 
 Sarebbe interessante, se in futuro si potesse esplorare nuovamente tale progetto con l'obiettivo di affinare ulteriormente le tecniche implementate oppure adottare nuove tecnologie sviluppate nel tempo, così da migliorare sia il processo di ETL che di analisi dei dati, e magari evolvere ed espandere il progetto a tutti i processi decisionali aziendali. Contribuendo in questo modo allo sviluppo dell'azienda in ogni ambito della stessa.
+\end{comment}
