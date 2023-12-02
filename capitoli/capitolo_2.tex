@@ -9,7 +9,7 @@ Come accennato in precedenza le esigenze di salvataggio e gestione dei dati sono
 
 Questo poiché senza delle informazioni che possano considerarsi adeguate, definite tali poiché consentirebbero di svolgere scelte corrette dettate dalla conoscenza derivate dalla lettura di tali dati, difficilmente si potrebbe ottenere una strategia vincente. I Big Data sono ciò che permette di svolgere questo compito al meglio, trattandosi di beni da cui è possibile estrarre moltissime informazioni che poi potranno essere impiegate per prendere le decisioni nel miglior stato di conoscenza possibile \cite{iusitinere_big_data}.
 
-Ad avvalorare tali affermazioni è presente il report svolto dalla piattaforma Acumen svolto a fine del 2022 (basato su dati raccolti fino al 2021), secondo cui il mercato dei Big Data a livello mondiale nel 2021 si è attestato sul valore di 165,5 miliardi di dollari. Inoltre, a seguito di approfonditi studi, è stato previsto un incremento del valore fino a 473,6 miliardi nel 2030 dovuto ad un CAGR annuale\footnote{Il \textit{Compound Annual Growth Rate} (\textit{CAGR}), o \textit{Tasso di crescita annuale composto}, corrisponde alla crescita percentuale media di una grandezza in un lasso di tempo \cite{borsa_italiana_cagr}.} del 12,7\% \cite{acumen_big_data_market}.
+Ad avvalorare tali affermazioni, la Acumen Research Consulting (ARC), fornitore globale di servizi di market intelligence e di consulenza per le tecnologie dell'informazione, ha svolto un analisi del mercato dei Big Data relativo al 2021. La Figura \ref{fig:Global-Big-Data-Market} mostra i risultati che hanno attribuito ai Big Data un valore complessivo di 165,5 miliardi di dollari. Inoltre, a seguito di approfonditi studi, è stato previsto un incremento del valore fino a 473,6 miliardi nel 2030 dovuto ad un CAGR annuale\footnote{Il \textit{Compound Annual Growth Rate} (\textit{CAGR}), o \textit{Tasso di crescita annuale composto}, corrisponde alla crescita percentuale media di una grandezza in un lasso di tempo \cite{borsa_italiana_cagr}.} del 12,7\% \cite{acumen_big_data_market}.
 
 \begin{figure}[h!]
     \centering
@@ -18,42 +18,68 @@ Ad avvalorare tali affermazioni è presente il report svolto dalla piattaforma A
     \label{fig:Global-Big-Data-Market}
 \end{figure}
 
-\subsection{Definizione}
+\subsection{Definizione di ``Big Data''}
 
-Il capitolo precedente ci ha permesso di comprendere quanto sia stata rilevante l'evoluzione dei dati e di come questi abbiano inciso nella storia dell'uomo, anche al di fuori dell'ambito informatico. Facendo ciò ci è stato possibile comprendere come, anche senza un vero e proprio riferimento ad una definizione ufficiale, molti sono stati i riferimenti eterogenei al mondo dei Big Data. Per poter capire effettivamente cosa siano i Big Data bisogna quindi adoperare una definizione ufficiale, purtroppo però ad oggi non è stata ancora creata. Per questo motivo, di seguito sono riportate le più rilevanti e significative definizioni pubblicate nel tempo.
+Il capitolo precedente ci ha permesso di comprendere quanto sia stata rilevante l'evoluzione dei dati e di come questi abbiano inciso nella storia dell'uomo, anche al di fuori dell'ambito informatico. Tuttavia, poichè il dominio dei Big Data è molto eterogeneo, non è ancora possibile evidenziare l'esistenza di una definizione univoca capace di rappresentare tutti i contesti di utilizzo. Per garantire un'analisi completa, abbiamo esaminato le definizioni più pertinenti seguendo le linee guida proposte da Garousi et al. \cite{GAROUSI}. Questo studio ha coinvolto l'esame sia della letteratura ``grigia'' che di quella ``bianca'', includendo sia le pubblicazioni scientifiche che quelle non pubblicate.
 
-\begin{comment}
-\begin{table}
-    \centering
-    \begin{tabular}{|p{10cm}|p{3cm}|}
-        \textbf{Definizione} & \textbf{Autore} \\
-        «I Big Data sono risorse informative ad alto volume, alta velocità e/o alta varietà che richiedono nuove forme di elaborazione per consentire una migliore presa di decisioni, scoprire nuove intuizioni e ottimizzare i processi.» 
-        & Laney Doug (2001) \cite{laney_3d_data_management}\\
-        «Quando le dimensioni dei dati stessi diventano parte del problema e le tecniche tradizionali per lavorare con i dati perdono efficacia.» 
-        & Mike Loukides (2010) \cite{loukides_data_science}\\
-        «Dati le cui dimensioni ci costringono a guardare oltre i metodi collaudati e consolidati in quel momento.» 
-        & Jacobs Adam (2009) \cite{jacobs_big_data}\\
-        «Le tecnologie Big Data rappresentano una nuova generazione di tecnologie e architetture progettate per estrarre valore in modo economico da volumi molto ampi di dati di varie tipologie, consentendo la cattura ad alta velocità, la scoperta e/o l'analisi.» 
-        & IDC (2011) \cite{idc_big_data}\\
-        «I Big Data sono un insieme enorme di dati complessi che richiedono metodologie, strumenti e competenze atte a gestirli, processarli, estrarli ed analizzarli.» 
-        & Elisa Iandiorio (2021) \cite{iandorio_big_data}\\
-        «Una raccolta di insiemi di dati grandi e complessi che possono essere elaborati solo con difficoltà utilizzando strumenti di gestione di database normalmente disponibili.» 
-        & Mike 2.0. (2014) \cite{mike_big_data}\\
-        «Il termine “Big Data” comprende l'uso di tecniche per catturare, elaborare, analizzare e visualizzare potenzialmente grandi insiemi di dati in un periodo di tempo ragionevole non accessibile alle tecnologie informatiche standard.» 
-        & NESSI (2012) \cite{nessi_big_data}\\
-        «I Big Data di solito includono insiemi di dati di dimensioni oltre la capacità dei comuni strumenti software di recuperare, pulire, gestire ed elaborare dati entro un tempo trascorso tollerabile.» 
-        & Wikipedia (2023) \cite{wikipedia_big_data}\\
-        «Insiemi di dati estremamente grandi che possono essere analizzati computazionalmente per rivelare modelli, tendenze e associazioni, specialmente in relazione al comportamento umano e alle interazioni.» 
-        & Google dictionary (2023) \cite{google_big_data}\\
-        «Definiamo i Big Data come un fenomeno culturale, tecnologico e accademico che si basa sull'interazione tra: (1) Tecnologia: massimizzare la potenza di calcolo e l'accuratezza algoritmica per raccogliere, analizzare, collegare e confrontare grandi insiemi di dati. (2) Analisi: trarre vantaggio da grandi insiemi di dati per identificare modelli al fine di formulare affermazioni economiche, sociali, tecniche e legali. (3) Mitologia: la diffusa convinzione che grandi insiemi di dati offrano un livello superiore di intelligenza e conoscenza che può generare intuizioni che in passato erano impossibili, con l'aura di verità, oggettività e precisione.» 
-        & danah boyd, Kate Crawford (2012) \cite{routledge_big_data}\\
-    \end{tabular}
-    \caption{Definizioni di Big Data}
-    \label{tab:big_data_definitions}
-\end{table}
-\end{comment}
+Facendo ciò ci è stato possibile comprendere come, anche senza un vero e proprio riferimento ad una definizione ufficiale, molti sono stati i riferimenti eterogenei al mondo dei Big Data. Per poter capire effettivamente cosa siano i Big Data bisogna quindi adoperare una definizione ufficiale, purtroppo però ad oggi non è stata ancora creata. Per questo motivo, di seguito sono riportate le più rilevanti e significative definizioni pubblicate nel tempo.
 
-\begin{figure}[h!]
+
+
+\begin{longtable}{|p{11cm}|p{3cm}|}
+    \hline
+    \textbf{Definizione} & \textbf{Autore} \\
+    \hline
+    \endfirsthead
+    \label{tab:big_data_definitions} \\
+    \caption{Definizioni di Big Data} \\
+
+    \multicolumn{2}{c}%
+    {{\bfseries Tabella \thetable{} continua dalla pagina precedente}} \\
+    \hline
+    \textbf{Definizione} & \textbf{Autore} \\
+    \hline
+    \endhead
+
+    \hline \multicolumn{2}{|r|}{{Continua nella pagina successiva}} \\ \hline
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    «I Big Data sono risorse informative ad alto volume, alta velocità e/o alta varietà che richiedono nuove forme di elaborazione per consentire una migliore presa di decisioni, scoprire nuove intuizioni e ottimizzare i processi.» 
+    & Laney Doug (2001) \cite{laney_3d_data_management}\\
+    \hline
+    «Quando le dimensioni dei dati stessi diventano parte del problema e le tecniche tradizionali per lavorare con i dati perdono efficacia.» 
+    & Mike Loukides (2010) \cite{loukides_data_science}\\
+    \hline
+    «Dati le cui dimensioni ci costringono a guardare oltre i metodi collaudati e consolidati in quel momento.» 
+    & Jacobs Adam (2009) \cite{jacobs_big_data}\\
+    \hline
+    «Le tecnologie Big Data rappresentano una nuova generazione di tecnologie e architetture progettate per estrarre valore in modo economico da volumi molto ampi di dati di varie tipologie, consentendo la cattura ad alta velocità, la scoperta e/o l'analisi.» 
+    & IDC (2011) \cite{idc_big_data}\\
+    \hline
+    «I Big Data sono un insieme enorme di dati complessi che richiedono metodologie, strumenti e competenze atte a gestirli, processarli, estrarli ed analizzarli.» 
+    & Elisa Iandiorio (2021) \cite{iandorio_big_data}\\
+    \hline
+    «Una raccolta di insiemi di dati grandi e complessi che possono essere elaborati solo con difficoltà utilizzando strumenti di gestione di database normalmente disponibili.» 
+    & Mike 2.0. (2014) \cite{mike_big_data}\\
+    \hline
+    «Il termine “Big Data” comprende l'uso di tecniche per catturare, elaborare, analizzare e visualizzare potenzialmente grandi insiemi di dati in un periodo di tempo ragionevole non accessibile alle tecnologie informatiche standard.» 
+    & NESSI (2012) \cite{nessi_big_data}\\
+    \hline
+    «I Big Data di solito includono insiemi di dati di dimensioni oltre la capacità dei comuni strumenti software di recuperare, pulire, gestire ed elaborare dati entro un tempo trascorso tollerabile.» 
+    & Wikipedia (2023) \cite{wikipedia_big_data}\\
+    \hline
+    «Insiemi di dati estremamente grandi che possono essere analizzati computazionalmente per rivelare modelli, tendenze e associazioni, specialmente in relazione al comportamento umano e alle interazioni.» 
+    & Google dictionary (2023) \cite{google_big_data}\\
+    \hline
+    «Definiamo i Big Data come un fenomeno culturale, tecnologico e accademico che si basa sull'interazione tra: (1) Tecnologia: massimizzare la potenza di calcolo e l'accuratezza algoritmica per raccogliere, analizzare, collegare e confrontare grandi insiemi di dati. (2) Analisi: trarre vantaggio da grandi insiemi di dati per identificare modelli al fine di formulare affermazioni economiche, sociali, tecniche e legali. (3) Mitologia: la diffusa convinzione che grandi insiemi di dati offrano un livello superiore di intelligenza e conoscenza che può generare intuizioni che in passato erano impossibili, con l'aura di verità, oggettività e precisione.» 
+    & danah boyd, Kate Crawford (2012) \cite{routledge_big_data}\\
+    \hline
+\end{longtable}
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\linewidth]{figure/capitolo_2/Big_Data.pdf}
     \caption{I Big Data}
@@ -111,23 +137,42 @@ In base alle necessità, all'architettura del progetto e al loro scopo, i dati p
 
 Principalmente, i dati contenenti le informazioni vengono salvati in formati strutturati o non strutturati e per questo motivo spesso si incorre nel dubbio sul quale scegliere tra i due formati per il proprio progetto. Di seguito è riportata una tabella che mostra le differenze fra le due tipologie di dati \cite{analytixlabs_big_data_structure}.
 
-\begin{comment}
-\begin{table}
-    \centering
-    \begin{tabular}{ccc}
-        Ambito di paragone & Dati Strutturati & Dati Non Strutturati\\
-        Struttura & I dati strutturati nei Big Data si basano su RDBMS e seguono una struttura a righe-colonne. Poiché hanno sempre la stessa forma, tali dati possono essere utilizzati sia da macchine che uomini. &  I dati non sono organizzati in un modo definito, per questo motivo non funzionano con alcun set di modelli di dati. \\
-        Fonti & Provengono principalmente da database relazionali, sistemi di gestione, siti web, applicazioni, dati finanziari, archivi dati, sensori e dispositivi IoT. & Provengono principalmente da file di testo, immagini, video, audio, documenti PDF, e-mail, social media, log e dati di tracciamento, documenti di elaborazione e bot di assistenza.\\
-        Formati & I loro possibili formati di origini sono: CSV, Excel, Database Relazioni vari, XML, Parquet ed Avro. & I loro possibili formati di origini sono: TXT, PDF, JPEG, PNG, MP3 e MP4.\\
-        Modelli & Modello che rispetta una struttura predefinita prima di essere salvati nell'archivio dati. & Sono memorizzati nel proprio formato originale senza essere elaborati finché non eseguiti.\\
-        Salvataggio & I dati vengono salvati in un formato tabellare e richiedono meno spazio di archiviazione. & Questi dati vengono archiviati come file multimediali o database NoSQL, richiedendo maggiore spazio di archiviazione.\\
-        Formato & Segue uno schema rigido che fornisce sia coerenza che efficienza. & Non segue una struttura costante e per questo è incoerente.\\
-        Facilità di analisi & Esistono diversi strumenti di analisi rodati per il recupero, la gestione e l'analisi dei dati. & Gli strumenti per il recupero, la gestione e l'analisi dei dati sono ancora in fase di sviluppo.\\
-    \end{tabular}
-    \caption{Differenze tra dati strutturati e dati non strutturati}
-    \label{tab:data_structure_differences}
-\end{table}
-\end{comment}
+\begin{longtable}{|p{2cm}|p{6cm}|p{6cm}|}
+    \label{tab:data_structure_differences} \\
+    % \caption{Differenze tra dati strutturati e non strutturati} \\
+    \hline
+    \textbf{Ambito di paragone} & \textbf{Dati Strutturati} & \textbf{Dati Non Strutturati} \\
+    \hline
+    \endfirsthead
+
+    \multicolumn{3}{c}%
+    {{\bfseries Tabella \thetable{} continua dalla pagina precedente}} \\
+    \hline
+    \textbf{Ambito di paragone} & \textbf{Dati Strutturati} & \textbf{Dati Non Strutturati} \\
+    \hline
+    \endhead
+
+    \hline \multicolumn{3}{|r|}{{Continua nella pagina successiva}} \\ \hline
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    Struttura & I dati strutturati nei Big Data si basano su RDBMS e seguono una struttura a righe-colonne. Poiché hanno sempre la stessa forma, tali dati possono essere utilizzati sia da macchine che uomini. &  I dati non sono organizzati in un modo definito, per questo motivo non funzionano con alcun set di modelli di dati. \\
+    \hline
+    Fonti & Provengono principalmente da database relazionali, sistemi di gestione, siti web, applicazioni, dati finanziari, archivi dati, sensori e dispositivi IoT. & Provengono principalmente da file di testo, immagini, video, audio, documenti PDF, e-mail, social media, log e dati di tracciamento, documenti di elaborazione e bot di assistenza.\\
+    \hline
+    Formati & I loro possibili formati di origini sono: CSV, Excel, Database Relazioni vari, XML, Parquet ed Avro. & I loro possibili formati di origini sono: TXT, PDF, JPEG, PNG, MP3 e MP4.\\
+    \hline
+    Modelli & Modello che rispetta una struttura predefinita prima di essere salvati nell'archivio dati. & Sono memorizzati nel proprio formato originale senza essere elaborati finché non eseguiti.\\
+    \hline
+    Salvataggio & I dati vengono salvati in un formato tabellare e richiedono meno spazio di archiviazione. & Questi dati vengono archiviati come file multimediali o database NoSQL, richiedendo maggiore spazio di archiviazione.\\
+    \hline
+    Formato & Segue uno schema rigido che fornisce sia coerenza che efficienza. & Non segue una struttura costante e per questo è incoerente.\\
+    \hline
+    Facilità di analisi & Esistono diversi strumenti di analisi rodati per il recupero, la gestione e l'analisi dei dati. & Gli strumenti per il recupero, la gestione e l'analisi dei dati sono ancora in fase di sviluppo.\\
+    \hline
+\end{longtable}
 
 In altre parole, analizzando le differenze riportate nella tabella precedente, la scelta di adoperare uno dei due formati di dati dipende da quale sia lo scopo e soprattutto la tipologia di informazioni che si vorrebbero salvare. Non esiste un formato che prevale sull'altro in qualsiasi caso, ma solamente in base alla propria esigenza.
 
